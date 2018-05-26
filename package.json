@@ -20,8 +20,11 @@
     "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-remark": "^1.7.41",
     "hamburgers": "^0.9.3",
+    "material-tabs": "^0.0.8",
+    "qs": "^6.5.2",
     "react-feather": "^1.1.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-markdown": "^3.3.2"
   },
   "keywords": [
     "gatsby"

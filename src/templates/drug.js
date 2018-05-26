@@ -1,10 +1,70 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { TabGroup, Tab } from 'material-tabs'
+import Link from 'gatsby-link'
+import qs from 'qs'
+import Markdown from 'react-markdown'
+
+import Alert from '../components/Alert'
+
+const tabStyle = {
+  color: '#ee6e73',
+  fontWeight: 500,
+  whiteSpace: 'nowrap',
+}
+
+const defaultTabs = [
+  { link: 'overview', label: 'Sumário' },
+  { link: 'effects', label: 'Efeitos' },
+  { link: 'health', label: 'Saúde' },
+  { link: 'law', label: 'Lei' },
+]
 
 class Drug extends Component {
   state = {
 
+  }
+  getTab() {
+    const { tab } = qs.parse(this.props.location.search, { ignoreQueryPrefix: true })
+    const { drug } = this.props.pathContext
+    switch (tab) {
+      case 'overview':
+        return (
+          <Markdown source={drug.summary} />
+        )
+      case 'effects':
+        return (
+          <div>
+            <Alert icon="Info" type="info">
+              Os efeitos listados abaixo raramente (ou nunca) ocorrerão de uma só vez, mas doses maiores aumentarão as chances e são mais propensas a induzir uma gama completa de efeitos.
+            </Alert>
+            <Markdown source={drug.effects} />
+          </div>
+        )
+      case 'health':
+        return (
+          <Markdown source={drug.health} />
+        )
+      case 'law':
+        return (
+          <Markdown source={drug.law} />
+        )
+      default:
+        return (
+          <Markdown source={drug.summary} />
+        )
+    }
+  }
+  mapTabs() {
+    const { drug } = this.props.pathContext
+    return defaultTabs.map((tab, index) => (
+      <Link to={`${drug.path}?tab=${tab.link}`} key={index}>
+        <Tab style={tabStyle}>
+          {tab.label}
+        </Tab>
+      </Link>
+    ))
   }
   render() {
     const { drug } = this.props.pathContext
@@ -29,8 +89,11 @@ class Drug extends Component {
                     </h1>
                   </div>
                   {drug.molecules.map((molecule) =>
-                    <img style={{ maxWidth: 96 }} src={require(`../assets/images/molecules/${molecule}.svg`)} />)}
-
+                    (<img
+                      style={{ maxWidth: 96 }}
+                      alt={`Molécula ${molecule}`}
+                      src={require(`../assets/images/molecules/${molecule}.svg`)} //eslint-disable-line
+                    />))}
                 </div>
                 <p className="text-uppercase text-pinkLight">
                   <strong>{drug.class}</strong>
@@ -43,7 +106,21 @@ class Drug extends Component {
                 {drug.aliases.join(', ')}
               </div>
               <div className="col-12 col-lg-8 mt-3">
-
+                <div className="card" style={{ borderRadius: '4px' }}>
+                  <div style={{ overflowX: 'auto', overflowY: 'hidden' }}>
+                    <div style={{ minWidth: 560, margin: '0 auto' }}>
+                      <TabGroup
+                        // defaultSelectedTab={defaultTabs.findIndex((tab) => tab.link === this.props.params.tab)}
+                        style={{ indicator: { backgroundColor: '#f6b2b5' } }}
+                      >
+                        {this.mapTabs()}
+                      </TabGroup>
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    {this.getTab()}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
