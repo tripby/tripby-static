@@ -7,9 +7,24 @@ molecules: ["mdma"]
 
 class: Empatogênico
 
-aliases: ['ecstasy', 'bala', 'MD', 'roda', 'redonda', 'Michael Douglas', 'XTC', 'E', 'M', 'molly']
+aliases: 
+  - ecstasy
+  - bala
+  - MD
+  - roda
+  - redonda
+  - Michael Douglas
+  - XTC
+  - E
+  - M
+  - molly
 
-routes: ['oral', 'retal', 'nasal']
+routes:
+  - name: Oral
+    duration: "./durations/oral.md"
+    dosage: "./dosages/oral.md" 
+  - name: Retal
+  - name: Nasal
 
 summary: "./summary.md"
 

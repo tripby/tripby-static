@@ -48,7 +48,33 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                   }
                 }
               }
-              routes
+              routes {
+                name
+                duration {
+                  childMarkdownRemark {
+                    frontmatter {
+                      total
+                      onset
+                      comeup
+                      peak
+                      offset
+                      afterEffects
+                      hangover
+                    }
+                  }
+                }
+                dosage {
+                  childMarkdownRemark {
+                    frontmatter {
+                      threshold
+                      light
+                      common
+                      strong
+                      heavy
+                    }
+                  }
+                }
+              }
               effects {
                 childMarkdownRemark {
                   internal {
