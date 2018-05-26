@@ -4,6 +4,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -11,10 +18,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-61977009-1",
-      }
-    }
+        trackingId: 'UA-61977009-1',
+      },
+    },
   ],
 }
