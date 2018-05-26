@@ -58,8 +58,8 @@ class Drug extends Component {
   }
   mapTabs() {
     const { drug } = this.props.pathContext
-    return defaultTabs.map((tab, index) => (
-      <Link to={`${drug.path}?tab=${tab.link}`} key={index}>
+    return defaultTabs.map((tab) => (
+      <Link to={`${drug.path}?tab=${tab.link}`} key={tab.link}>
         <Tab style={tabStyle}>
           {tab.label}
         </Tab>
@@ -132,6 +132,7 @@ class Drug extends Component {
 
 Drug.propTypes = {
   pathContext: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default Drug
