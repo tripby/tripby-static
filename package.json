@@ -24,7 +24,8 @@
     "qs": "^6.5.2",
     "react-feather": "^1.1.0",
     "react-helmet": "^5.2.0",
-    "react-markdown": "^3.3.2"
+    "react-markdown": "^3.3.2",
+    "reactstrap": "^6.0.1"
   },
   "keywords": [
     "gatsby"

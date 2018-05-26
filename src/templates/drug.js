@@ -5,6 +5,8 @@ import { TabGroup, Tab } from 'material-tabs'
 import Link from 'gatsby-link'
 import qs from 'qs'
 import Markdown from 'react-markdown'
+import * as Icon from 'react-feather'
+import { Collapse } from 'reactstrap'
 
 import Alert from '../components/Alert'
 
@@ -23,7 +25,6 @@ const defaultTabs = [
 
 class Drug extends Component {
   state = {
-
   }
   getTab() {
     const { tab } = qs.parse(this.props.location.search, { ignoreQueryPrefix: true })
@@ -66,6 +67,13 @@ class Drug extends Component {
       </Link>
     ))
   }
+  handleRouteCollapse(route) {
+    if (this.state.activeRoute === route.name) {
+      this.setState({ activeRoute: null })
+    } else if (route.duration || route.dosage) {
+      this.setState({ activeRoute: route.name })
+    }
+  }
   render() {
     const { drug } = this.props.pathContext
     return (
@@ -103,7 +111,146 @@ class Drug extends Component {
                   {drug.aliases.join(', ')}
                 </div>
                 <h6 className="text-uppercase text-muted">Rotas de administração</h6>
-                {drug.aliases.join(', ')}
+                {drug.routes.map((route) => (
+                  <div className="card border-0 my-1">
+                    <button
+                      className="text-left card-header d-flex"
+                      style={{
+                        background: 'none',
+                        cursor: 'pointer',
+                        border: 0,
+                        padding: '0.5rem 0.75rem',
+                      }}
+                      onClick={() => this.handleRouteCollapse(route)}
+                    >
+                      <div className="flex-1">{route.name}</div>
+                      <div className="d-flex align-items-center text-muted">
+                        <div className="mr-2 d-flex">
+                          {route.dosage && (<small>dosagem</small>)}
+                          {(route.dosage && route.duration) && (<small className="mx-1">/</small>)}
+                          {route.dosage && (<small>duração</small>)}
+                        </div>
+                        {this.state.activeRoute === route.name ? <Icon.ChevronUp /> : (route.duration || route.dosage) && <Icon.ChevronDown />}
+                      </div>
+                    </button>
+                    <Collapse isOpen={this.state.activeRoute === route.name}>
+                      <div className="card-body">
+                        {route.dosage && (
+                          <div>
+                            <h6 className="text-center text-uppercase">
+                              <strong>Dosagem</strong>
+                            </h6>
+                            <table className="table">
+                              <thead>
+                                <td><strong>Nível</strong></td>
+                                <td className="text-right"><strong>Dose</strong></td>
+                              </thead>
+                              <tbody>
+                                {route.dosage.childMarkdownRemark.frontmatter.threshold && (
+                                  <tr>
+                                    <td>Mínimo</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.threshold}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.light && (
+                                  <tr>
+                                    <td>Leve</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.light}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.common && (
+                                  <tr>
+                                    <td>Comum</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.common}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.strong && (
+                                  <tr>
+                                    <td>Alta</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.strong}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.heavy && (
+                                  <tr>
+                                    <td>Pesada</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.heavy}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.afterEffects && (
+                                  <tr>
+                                    <td>Efeitos posteriores</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.afterEffects}</td>
+                                  </tr>
+                                )}
+                                {route.dosage.childMarkdownRemark.frontmatter.hangover && (
+                                  <tr>
+                                    <td>Ressaca</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.hangover}</td>
+                                  </tr>
+                                )}
+                              </tbody>
+                            </table>
+                          </div>
+                        )}
+                        {route.duration && (
+                          <div>
+                            <h6 className="text-center text-uppercase"><strong>Duração</strong></h6>
+                            <table className="table">
+                              <thead>
+                                <td><strong>Período</strong></td>
+                                <td className="text-right"><strong>Tempo</strong></td>
+                              </thead>
+                              <tbody>
+                                {route.duration.childMarkdownRemark.frontmatter.total && (
+                                  <tr>
+                                    <td>Total</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.total}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.onset && (
+                                  <tr>
+                                    <td>Início</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.onset}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.comeup && (
+                                  <tr>
+                                    <td>Primeiras sensações</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.comeup}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.peak && (
+                                  <tr>
+                                    <td>Pico</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.peak}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.offset && (
+                                  <tr>
+                                    <td>Diminuição</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.offset}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.afterEffects && (
+                                  <tr>
+                                    <td>Efeitos posteriores</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.afterEffects}</td>
+                                  </tr>
+                                )}
+                                {route.duration.childMarkdownRemark.frontmatter.hangover && (
+                                  <tr>
+                                    <td>Ressaca</td>
+                                    <td className="text-right">{route.duration.childMarkdownRemark.frontmatter.hangover}</td>
+                                  </tr>
+                                )}
+                              </tbody>
+                            </table>
+                          </div>
+                        )}
+                      </div>
+                    </Collapse>
+                  </div>
+                ))}
               </div>
               <div className="col-12 col-lg-8 mt-3">
                 <div className="card" style={{ borderRadius: '4px' }}>
