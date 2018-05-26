@@ -11,7 +11,7 @@ aliases: ['ecstasy', 'bala', 'MD', 'roda', 'redonda', 'Michael Douglas', 'XTC', 
 
 routes: ['oral', 'retal', 'nasal']
 
-intro: "MDMA ou “ecstasy” é uma anfetamina psicodélica que ganhou popularidade nos últimos 20 anos pela sua capacidade de produzir fortes sensações de felicidade, conforto, empatia e conexão com outros indivíduos. A forma mais frequente é em comprimidos, mas também é encontrado em cápsulas ou cristal. O uso de MDMA é intimamente relacionado com a cena da música eletrônica ao redor do mundo, mas tem sido usada por terapeutas em adjunto à psicoterapia.
+summary: "MDMA ou “ecstasy” é uma anfetamina psicodélica que ganhou popularidade nos últimos 20 anos pela sua capacidade de produzir fortes sensações de felicidade, conforto, empatia e conexão com outros indivíduos. A forma mais frequente é em comprimidos, mas também é encontrado em cápsulas ou cristal. O uso de MDMA é intimamente relacionado com a cena da música eletrônica ao redor do mundo, mas tem sido usada por terapeutas em adjunto à psicoterapia.
 
 Pelo fato do MDMA ser tão popular e por combinar tão bem com festas dançantes, a demanda normalmente excede a oferta – especialmente dentro de um lugar específico numa determinada ocasião. Isso cria a oportunidade para indivíduos venderem qualquer coisa como “ecstasy”. Comprimidos vendidos como ecstasy são notoriamente não-confiáveis, comumente contendo cafeína, efedrina, anfetaminas, metilona, 2C-B, MDA, MDE, DXM, DOB sem necessariamente conter MDMA ou outro psicoativo. Esse problema levou ao desenvolvimento de kits para testar a presença de MDMA em amostras, o que ajuda o usuário a saber o que ela realmente possui."
 
@@ -39,6 +39,7 @@ Algumas pessoas são mais sensíveis que outras ao MDMA. Aqueles que decidem us�
 - sensações brilhantes e intensas
 - vontade de abraçar e beijar pessoas
 - analgesia, insensibilidade a estímulos agressivos, diminuição na percepção da dor
+
 
 ## Neutros
 

@@ -26,7 +26,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               class
               aliases
-              intro
+              summary
               health
               law
               routes
@@ -39,11 +39,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-  `).then((result) => {
+  `).then((result) => { //eslint-disable-line
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
