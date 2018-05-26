@@ -79,11 +79,11 @@ class Drug extends Component {
     return (
       <div>
         <Helmet
-          title={`${drug.title} · efeitos, duração, dosagem, saúde e lei · TRIPBY`}
+          title={`${drug.name} · efeitos, duração, dosagem, saúde e lei · TRIPBY`}
         >
           <meta
             name="description"
-            content={`Entenda melhor sobre ${drug.title} e como usar de forma segura. ${drug.title} é ${drug.class.toLowerCase()} e também é conhecido como ${drug.aliases.join(', ')}.`}
+            content={`Entenda melhor sobre ${drug.name} e como usar de forma segura. ${drug.name} é ${drug.class.toLowerCase()} e também é conhecido como ${drug.aliases.join(', ')}.`}
           />
         </Helmet>
         <section className="py-3 py-md-4">
@@ -93,7 +93,7 @@ class Drug extends Component {
                 <div className="d-flex align-items-center">
                   <div className="flex-1">
                     <h1>
-                      <strong>{drug.title}</strong>
+                      <strong>{drug.name}</strong>
                     </h1>
                   </div>
                   {drug.molecules.map((molecule) =>

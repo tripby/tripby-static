@@ -24,7 +24,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             frontmatter {
               path
-              title
+              name
               class
               aliases
               summary {
