@@ -19,7 +19,7 @@ function FeaturedContent(props) {
     <section style={sectionStyle}>
       <div className="container">
         <div className="py-4 py-md-5 d-flex flex-column justify-content-center">
-          <h2 className={`text-uppercase ${!props.subtagline ? ' mb-0' : ''}`}><strong style={textStyle}>{props.tagline}</strong></h2>
+          <h1 className={`text-uppercase ${!props.subtagline ? ' mb-0' : ''}`}><strong style={textStyle}>{props.tagline}</strong></h1>
           <p style={textStyle}>{props.subtagline}</p>
           {props.children}
         </div>
