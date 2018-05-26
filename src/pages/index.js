@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import * as Icon from 'react-feather'
 
 import FeaturedContent from '../components/FeaturedContent'
 import DrugCard from '../components/DrugCard'
@@ -11,7 +12,7 @@ const IndexPage = ({ data }) => {
       <FeaturedContent tagline="Leia a bula." />
       <section className="py-3 py-md-4">
         <div className="container">
-          <h2>Psicoativos</h2>
+          <h3 className="text-uppercase text-muted">Psicoativos</h3>
           <ul className="row list-unstyled mt-3">
             {drugs.map((drug) =>
               (
@@ -22,6 +23,12 @@ const IndexPage = ({ data }) => {
                 </li>
               ))}
           </ul>
+          <Link to="/psicoativos">
+            <div className="d-inline-flex align-items-center text-uppercase font-weight-normal">
+              Todos os psicoativos
+              <div className="ml-2"><Icon.ChevronRight size={12} /></div>
+            </div>
+          </Link>
         </div>
       </section>
     </div>
