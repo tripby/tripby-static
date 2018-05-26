@@ -1,5 +1,5 @@
 ---
-path: "/psicoativos/mdma/"
+path: "/psicoativos/mdma"
 
 title: MDMA
 
