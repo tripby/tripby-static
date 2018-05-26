@@ -24,6 +24,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               path
               title
+              class
               aliases
               intro
               health

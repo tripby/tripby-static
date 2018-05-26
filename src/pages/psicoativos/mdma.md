@@ -5,7 +5,7 @@ title: MDMA
 
 molecules: ["mdma"]
 
-class: Emptagoênico
+class: Empatogênico
 
 aliases: ['ecstasy', 'bala', 'MD', 'roda', 'redonda', 'Michael Douglas', 'XTC', 'E', 'M', 'molly']
 
