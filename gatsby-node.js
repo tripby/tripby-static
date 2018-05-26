@@ -18,6 +18,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     {
       allMarkdownRemark(
         limit: 1000
+        filter: {id: {regex: "/index/"} }
       ) {
         edges {
           node {
@@ -26,11 +27,35 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               class
               aliases
-              summary
-              health
-              law
+              summary {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
+              health {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
+              law {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
               routes
-              effects
+              effects {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
               molecules
               erowid
               psychonautwiki

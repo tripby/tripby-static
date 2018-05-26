@@ -31,7 +31,7 @@ class Drug extends Component {
     switch (tab) {
       case 'overview':
         return (
-          <Markdown source={drug.summary} />
+          <Markdown source={drug.summary.childMarkdownRemark.internal.content} />
         )
       case 'effects':
         return (
@@ -39,20 +39,20 @@ class Drug extends Component {
             <Alert icon="Info" type="info">
               Os efeitos listados abaixo raramente (ou nunca) ocorrerão de uma só vez, mas doses maiores aumentarão as chances e são mais propensas a induzir uma gama completa de efeitos.
             </Alert>
-            <Markdown source={drug.effects} />
+            <Markdown source={drug.effects.childMarkdownRemark.internal.content} />
           </div>
         )
       case 'health':
         return (
-          <Markdown source={drug.health} />
+          <Markdown source={drug.health.childMarkdownRemark.internal.content} />
         )
       case 'law':
         return (
-          <Markdown source={drug.law} />
+          <Markdown source={drug.law.childMarkdownRemark.internal.content} />
         )
       default:
         return (
-          <Markdown source={drug.summary} />
+          <Markdown source={drug.summary.childMarkdownRemark.internal.content} />
         )
     }
   }
