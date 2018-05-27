@@ -1,0 +1,3 @@
+2C-B foi sintetizado pela primeira vez por Alexander Shulgin em 1974, enquanto explorava homólogos de DOB. O psicodélico sintético começou a ser comercializado no final de 1980 e ganhou popularidade como um substituto legal para o ecstasy .
+
+É geralmente considerado mais suave que LSD ou cogumelos, sendo menos propenso a catalisar surtos de dissociação ou ataques de pânico em doses recreativas normais. Também é conhecido pelos seus fortes efeitos corporais, que são descrito por alguns como uma energia prazerosa, uma sensação de “estar no corpo” e por outros como um desagradável zumbido no corpo.

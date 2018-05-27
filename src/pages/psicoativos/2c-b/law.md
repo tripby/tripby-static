@@ -1,0 +1,1 @@
+2C-B está na lista de substâncias controladas pela Anvisa, sendo sua produção, distribuição e possessão ilegais.
