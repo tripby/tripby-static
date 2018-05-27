@@ -1,0 +1,1 @@
+O álcool existe há pelo menos 8 mil anos, desde a invenção da fermentação para a produção de vinho na região do Irã. Com sua dispersão através do comércio e da invenção de novas formas de produção e apresentação, ganhou destaque na cultura de vários povos.
