@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
           <ul className="row list-unstyled mt-3">
             {drugs.map((drug) =>
               (
-                <li className="col-12 col-md-4" key={drug.node.frontmatter.name}>
+                <li className="col-12 col-md-6 col-xl-4" key={drug.node.frontmatter.name}>
                   <DrugCard
                     drug={drug.node.frontmatter}
                   />
@@ -60,7 +60,8 @@ export const query = graphql`
   query data {
     drugs: allMarkdownRemark(
       limit: 6
-      filter: {id: {regex: "/index/"} }
+      filter: {id: {regex: "/index/"}, frontmatter: {featured: {eq: true}} }
+      sort: {order: ASC, fields: [frontmatter___name]}
     ) {
       edges {
         node {
