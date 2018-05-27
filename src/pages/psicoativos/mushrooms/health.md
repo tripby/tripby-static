@@ -1,0 +1,3 @@
+Algumas pessoas sofrem de náusea e vômito quando a dose ingerida é alta e os cogumelos estão frescos. Quando os cogumelos são ressecados ou preparados na forma de chá, os efeitos acima são menos reportados.
+
+Ansiedade e medo diante de visões e pensamentos assustadores também são comuns, mas logo passam. Indivíduos com histórico familiar de doenças mentais devem ter cuidado pois a substância pode ajudar a ativar esses problemas. Usuários reportam perder a vontade de usar durante um tempo após a ingestão, considerando que há um período de tolerância durante o qual o efeito é menos significativo.
