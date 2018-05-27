@@ -1,0 +1,1 @@
+A produção, distribuição e possessão de heroína é ilegal no Brasil, assim como na maioria dos países ao redor do mundo.

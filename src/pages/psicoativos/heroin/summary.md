@@ -1,0 +1,3 @@
+Heroína é um opioide semi-sintético derivado da morfina. Quando injetada via intravenosa, causa um rush muito intenso de euforia que dura alguns minutos, seguido de analgesia por algumas horas. Quando injetada via intramuscular ou inalada, o início é um pouco mais lento e o pico é menos intenso.
+
+A heroína é produzida principalmente na Colômbia, México, sudeste asiático e Afeganistão. Dependendo da forma que é processada, ela pode ser desde uma massa escura pegajosa até um pó marrom, bronze ou branco. As amostras encontradas nas ruas variam muito na sua potência, podendo ser de 5% a até 95% pura.
