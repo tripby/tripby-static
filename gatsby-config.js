@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'TRIPBY · Informações psicoativas',
+    siteUrl: 'https://tripby.org',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -24,5 +25,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
+    'gatsby-plugin-sitemap',
   ],
 }

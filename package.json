@@ -18,6 +18,7 @@
     "gatsby-plugin-netlify": "^1.0.19",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sitemap": "^1.2.23",
     "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-remark": "^1.7.41",
     "hamburgers": "^0.9.3",
