@@ -23,8 +23,8 @@ const items = [
   },
   {
     label: 'Redução de danos',
-    link: '/reducao-de-danos',
-    icon: 'Shield',
+    link: '/artigos',
+    icon: 'Book',
   },
   {
     label: 'Sobre',
@@ -64,24 +64,25 @@ class Navigation extends React.Component {
             </Link>
             <span className="d-md-none"><Hamburger onClick={this.handleNav} navOpened={this.state.navOpened} /></span>
           </div>
+                                   </div>
+        <nav className={navClasses}>
+          <ul className="nav flex-column">
+            {items.map((item) => {
+              const ParsedIcon = Icon[item.icon]
+              return (<li key={item.link}>
+                <Link to={item.link} onClick={() => this.setState({ navOpened: false })}>
+                  <div className="d-flex align-items-center">
+                    <span className="mr-2 d-inline-flex align-items-center">
+                      <ParsedIcon size={24} />
+                    </span>
+                    <span>{item.label}</span>
+                  </div>
+                </Link>
+              </li>) 
+})}
+          </ul>
+        </nav>
         </div>
-          <nav className={navClasses}>
-            <ul className="nav flex-column">
-              {items.map((item) =>{
-                const ParsedIcon = Icon[item.icon]
-                return (<li key={item.link}>
-                  <Link to={item.link} onClick={() => this.setState({ navOpened: false })}>
-                    <div className="d-flex align-items-center">
-                      <span className="mr-2 d-inline-flex align-items-center">
-                        <ParsedIcon size={24} />
-                      </span>
-                      <span>{item.label}</span>
-                    </div>
-                  </Link>
-                </li>)}
-            )}
-            </ul>
-          </nav></div>
       </div>
     )
   }
