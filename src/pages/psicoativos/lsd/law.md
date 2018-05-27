@@ -1,0 +1,1 @@
+O LSD se encontra proibido na lista de substâncias sujeitas a controle especial da ANVISA no Brasil desde 1971, sendo proibidas a produção, posse e distribuição.
