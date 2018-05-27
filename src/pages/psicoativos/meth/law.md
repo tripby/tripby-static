@@ -1,0 +1,1 @@
+MDMA é uma substância controlada. Sua produção, distribuição e possessão são ilegais no Brasil e na maior parte do mundo.
