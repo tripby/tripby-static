@@ -100,6 +100,7 @@ class Drug extends Component {
                     (<img
                       style={{ maxWidth: 96 }}
                       alt={`Molécula ${molecule}`}
+                      key={molecule}
                       src={require(`../assets/images/molecules/${molecule}.svg`)} //eslint-disable-line
                     />))}
                 </div>
@@ -112,7 +113,7 @@ class Drug extends Component {
                 </div>
                 <h6 className="text-uppercase text-muted">Rotas de administração</h6>
                 {drug.routes.map((route) => (
-                  <div className="card border-0 my-1">
+                  <div className="card border-0 my-1" key={route.name}>
                     <button
                       className="text-left card-header d-flex"
                       style={{
@@ -142,8 +143,10 @@ class Drug extends Component {
                             </h6>
                             <table className="table">
                               <thead>
-                                <td><strong>Nível</strong></td>
-                                <td className="text-right"><strong>Dose</strong></td>
+                                <tr>
+                                  <th><strong>Nível</strong></th>
+                                  <th className="text-right"><strong>Dose</strong></th>
+                                </tr>
                               </thead>
                               <tbody>
                                 {route.dosage.childMarkdownRemark.frontmatter.threshold && (
@@ -191,8 +194,10 @@ class Drug extends Component {
                             <h6 className="text-center text-uppercase"><strong>Duração</strong></h6>
                             <table className="table">
                               <thead>
-                                <td><strong>Período</strong></td>
-                                <td className="text-right"><strong>Tempo</strong></td>
+                                <tr>
+                                  <th><strong>Período</strong></th>
+                                  <th className="text-right"><strong>Tempo</strong></th>
+                                </tr>
                               </thead>
                               <tbody>
                                 {route.duration.childMarkdownRemark.frontmatter.total && (
