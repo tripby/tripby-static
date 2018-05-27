@@ -1,0 +1,3 @@
+A mescalina é um psicodélico derivado das fenetilaminas, mais conhecida por ser a substância ativa presente no peyote e em outros cactos como o San Pedro. Foi isolada pela primeira vez em 1897 quando Arthur Heffer pesquisava sobre os princípios psicoativos do peyote. A mescalina é considerada um dos psicodélicos clássicos, com um longo histórico de uso tradicional na América do Sul e Norte (na forma de cacto).
+
+Sua forma cristalina (extraída ou sintética), apesar de disponível no mercado negro, costuma ser cara e difícil de ser encontrada.

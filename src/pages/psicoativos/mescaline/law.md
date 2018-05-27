@@ -1,0 +1,1 @@
+No Brasil, a produção, possessão e distribuição de mescalina são ilegais. Porém, os cactos que contêm a substância não são controlados ou ilegais.
