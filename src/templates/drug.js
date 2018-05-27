@@ -251,7 +251,7 @@ class Drug extends Component {
                   <div style={{ overflowX: 'auto', overflowY: 'hidden' }}>
                     <div style={{ minWidth: 360, margin: '0 auto' }}>
                       <TabGroup
-                        // defaultSelectedTab={defaultTabs.findIndex((tab) => tab.link === this.props.params.tab)}
+                        defaultSelectedTab={this.props.location.search ? defaultTabs.findIndex((tab) => tab.link === qs.parse(this.props.location.search, { ignoreQueryPrefix: true }).tab) : 0}
                         style={{ indicator: { backgroundColor: '#f6b2b5' } }}
                       >
                         {this.mapTabs()}
