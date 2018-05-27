@@ -1,0 +1,1 @@
+No Brasil, o THC é listado como uma substância controlada, sendo ilegal a produção, distribuição e possessão da maconha desde o início do século passado.

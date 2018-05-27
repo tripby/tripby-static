@@ -1,0 +1,3 @@
+A maconha é representada por um grupo de plantas do gênero Cannabis, que inclui as variantes C. indica e C. sativa. O uso desse vegetal data de 4.265 anos atrás e cada porção do mesmo é útil: folhas e caule (fibras para indústria têxtil), sementes (combustível e alimento) e seu ramo com várias flores ou inflorescências (uso médico e recreativo).
+
+Nas últimas quatro décadas, a potência das amostras para consumo analisadas pelos cientistas tem apresentado aumento na concentração do composto ativo devido ao melhoramento genético da espécie.
