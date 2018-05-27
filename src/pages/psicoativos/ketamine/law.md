@@ -1,0 +1,1 @@
+No Brasil, a ketamina é controlada sob lei veterinária e é ilegal para consumo humano. A lei não é exercida pelas autoridades com a mesma severidade que com outras drogas pelo uso ser bastante incomum no país.

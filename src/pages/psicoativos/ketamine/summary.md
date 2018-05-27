@@ -1,0 +1,3 @@
+Ketamina é um dissociativo anestésico desenvolvido nos meados dos anos 60, usado principalmente na área veterinária para anestesiar cães e gatos. Apesar da ketamina não ser largamente usada em humanos na área médica porque induz estados psicodélicos nos pacientes, ela ainda tem algumas aplicações médicas limitadas porque tem a vantagem de não debilitar a circulação e a respiração.
+
+Também é usada de forma recreativa e tem um potencial aditivo considerável, sendo comum casos de usuários que fazem uso diário.
