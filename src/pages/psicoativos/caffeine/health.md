@@ -1,0 +1,1 @@
+Doses acima de 200 mg podem causar sintomas ruins como náusea, dor de cabeça e taquicardia. Acima de 750 mg podem ocorrer vômitos, ansiedade, tremor, convulsões, disritmias, hipotensão, hipocalemia e acidose metabólica. Fatalidades decorrentes de overdoses são raras mas podem acontecer caso a pessoa seja muito sensível ou ingira mais do que 3g de cafeína.

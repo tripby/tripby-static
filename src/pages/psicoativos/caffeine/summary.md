@@ -1,0 +1,1 @@
+A cafeína é um estimulante extremamente comum usado diariamente por uma grande porção da população mundial. Ela tem um histórico de uso longo, sendo bem documentada e pesquisada.

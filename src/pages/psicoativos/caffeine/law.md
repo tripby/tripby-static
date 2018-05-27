@@ -1,0 +1,1 @@
+No Brasil, a venda de cafeína se dá de forma legal e não regulada mas há certas restrições em relação a quantidade de substância que pode haver num dado alimento.
