@@ -1,0 +1,1 @@
+A Salvia costuma ser legal na maioria dos países, mas em 2012, a ANVISA adicionou a planta na “Lista de plantas proscritas que podem originar substâncias entorpecentes e/ou psicotrópicas”, tornando-se ilegal a importação, exportação, comércio e manipulação da planta no Brasil.

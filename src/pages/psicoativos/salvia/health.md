@@ -1,0 +1,1 @@
+Como a maioria das substâncias fumadas, alguns usuários relatam irritação no pulmão e garganta após o uso. Alguns indivíduos também sentem dor de cabeça e leve irritabilidade depois da experiência.
