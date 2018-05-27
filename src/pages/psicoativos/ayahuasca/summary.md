@@ -1,0 +1,3 @@
+Ayahuasca é uma bebida fermentada feita a partir uma combinação de plantas que contêm DMT (dimetiltriptamina) e substâncias capazes de inibir a monoamina oxidase (IMAO), que é uma enzima presente no estômago, fígado e intestino capaz de tornar o DMT inativo. O termo “ayahuasca” vem do idioma Quechua, que significa “vinho das almas”.
+
+As plantas mais comumente usadas são Banisteriopsis caapi, também chamada de cipó-mariri, e Psichotria viridis, podendo haver também tabaco, Brugmansia, Datura e outras plantas diferentes. O preparado é feito pela fervura dos componentes. Fora da bacia amazônica, o preparado é feito com outras plantas mais comuns ao redor do mundo, como Mimosa tenuiflora (jurema preta) e sementes de Peganum harmala (arruda da síria) que tenham os IMAO.
