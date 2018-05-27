@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
           <ul className="row list-unstyled mt-3">
             {drugs.map((drug) =>
               (
-                <li className="col-12 col-md-4">
+                <li className="col-12 col-md-4" key={drug.node.frontmatter.name}>
                   <DrugCard
                     drug={drug.node.frontmatter}
                   />
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
           <ul className="row list-unstyled mt-3">
             {articles.map((article) =>
               (
-                <li className="col-12 col-md-6">
+                <li className="col-12 col-md-6" key={article.node.frontmatter.title}>
                   <ArticleCard article={article.node} />
                 </li>
               ))}
