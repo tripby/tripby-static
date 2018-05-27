@@ -3,7 +3,7 @@ path: "/psicoativos/salvia"
 
 featured: true
 
-name: Sálvia
+name: "Sálvia"
 
 molecules: ["salvinorin-a"]
 
@@ -14,7 +14,7 @@ aliases:
 
 routes:
   - name: Sublingual
-    dosage: "./dosages/oral.md" 
+    dosage: "./dosages/sublingual.md" 
   - name: Pulmonar
     dosage: "./dosages/pulmonar.md"
     duration: "./durations/pulmonar.md"    
