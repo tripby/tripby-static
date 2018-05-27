@@ -1,0 +1,3 @@
+Os efeitos do GHB em doses recreativas são fisicamente semelhantes aos do álcool. Em doses pequenas eles incluem relaxamento, redução de inibições sociais, habilidades motoras reduzidas, elevação no humor, aumento no tesão e outros efeitos semelhantes aos do álcool em doses médias.
+
+Em doses maiores, os efeitos incluem tontura; dificuldade ao focar a visão; mudanças de humor positivas; aumento na apreciação de música, dança e conversas; fala arrastada; náusea e embriaguez. Doses extremas podem causar diminuição do ritmo cardio-respiratório; convulsões ou espasmos; vômito.

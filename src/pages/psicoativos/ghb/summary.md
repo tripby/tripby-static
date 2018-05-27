@@ -1,0 +1,3 @@
+GHB é um sedativo usado tanto como remédio para dormir quanto como droga recreativa. É conhecido por sua habilidade de induzir sono semelhante a um coma em doses altas. É associado a mortes causadas por overdose e por casos em que foi dado a indivíduos sem que eles soubessem para fins abusivos.
+
+Uma das maiores preocupações relacionadas ao uso do GHB é que o intervalo de dosagem é estreito, ou seja, a linha entre a dose desejada e uma overdose é muito tênue. Mesmo pequenas overdoses podem levar a consequências indesejadas.

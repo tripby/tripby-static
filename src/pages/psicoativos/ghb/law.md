@@ -1,0 +1,1 @@
+No Brasil, a substância é controlada e legalmente permitida apenas para uso médico.
