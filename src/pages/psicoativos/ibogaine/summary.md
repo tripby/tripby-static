@@ -1,0 +1,5 @@
+A ibogaína é o principio ativo encontrado na raiz da _Tabernanthe iboga_ e em outras plantas tipicamente africanas. É um psicodélico forte e de longa duração, tradicionalmente usado em rituais por povos nativos. Se tornou mais conhecida nas últimas décadas na Europa, Estados Unidos, e mais recentemente [no Brasil](http://g1.globo.com/jornal-hoje/noticia/2014/10/remedio-ajuda-usuarios-de-crack-se-livrarem-da-dependencia-quimica.html), pelo seu uso para tratamento de dependências químicas.
+
+Os primeiros relatos históricos do uso ritualístico da_ T. iboga_ na África datam desde o século 19, sendo que provavelmente ela já era usada previamente. Existem diversas igrejas-iboga contemporâneas – como a Bwiti – que a utilizam como sacramento e ferramenta de iniciação.
+
+A ibogaína foi extraída pela primeira vez da _T. iboga_ em 1901. Um extrato contendo ibogaína chamado Lambarene foi vendido como antidepressivo na França em meados de 1939. Durante os anos 60, a ibogaína foi brevemente estudada como adjunto à terapia psicodélica.

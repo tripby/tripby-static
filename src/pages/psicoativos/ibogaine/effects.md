@@ -1,0 +1,1 @@
+Em doses maiores, normalmente causa náusea e vômitos que podem ser seguidos de dormência na pele e alucinações auditivas e visuais por 3-4 horas. Isto normalmente é seguido por um intenso registro autobiográfico dos eventos e da significância da vida do indivíduo, durando de 8-20 horas. Efeitos fisiológicos – como dificuldade para dormir – podem persistir por um ou dois dias.

@@ -1,0 +1,1 @@
+No Brasil, a ibogaína não consta na lista de substâncias controladas pela ANVISA no Brasil, portando não é proibida.
