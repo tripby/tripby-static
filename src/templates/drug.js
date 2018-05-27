@@ -249,7 +249,7 @@ class Drug extends Component {
               <div className="col-12 col-lg-8 mt-3">
                 <div className="card" style={{ borderRadius: '4px' }}>
                   <div style={{ overflowX: 'auto', overflowY: 'hidden' }}>
-                    <div style={{ minWidth: 560, margin: '0 auto' }}>
+                    <div style={{ minWidth: 360, margin: '0 auto' }}>
                       <TabGroup
                         // defaultSelectedTab={defaultTabs.findIndex((tab) => tab.link === this.props.params.tab)}
                         style={{ indicator: { backgroundColor: '#f6b2b5' } }}
