@@ -1,0 +1,1 @@
+O 5-MeO-DMT é controlado na maior parte do mundo. No Brasil, faz parte da lista F2 de substâncias controladas pela ANVISA.

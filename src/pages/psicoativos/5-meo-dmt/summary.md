@@ -1,0 +1,5 @@
+5-MeO-DMT é uma triptamina psicoativa que foi identificada pela primeira vez em meados do século XX em uma planta enteógena da América do Sul. A substância é um componente comum de muitas plantas diferentes e vem sendo tradicionalmente usada em snuffs psicoativos (uma espécie de “rapé”), assim como a semente da Anadenanthere Colubrina, a seiva da Epena virola e algumas bebidas fermentadas do tipo ayahuasca em que plantas que contém 5-MeO-DMT são usadas como aditivo. Em outros lugares, 5-MeO-DMT é principalmente encontrado como cristais e são fumados, cheirados ou ingeridos.
+
+A substância é muitas vezes confundida com seu primo mais conhecido, o [N,N-DMT](/psicoativos/dmt/) (comumente chamado apenas de DMT) o que pode levar a resultados inesperados, devido à grande diferença das doses adequadas (a dosagem do 5-MeO é pelo menos a metade da dosagem de DMT).
+
+A abreviação 5-MeO vem perdendo sua utilidade desde que outras 5-MeO (grupo metóxi na posição 5, tal como 5-MeO-DiPT) psicoativas se tornaram conhecidas.
