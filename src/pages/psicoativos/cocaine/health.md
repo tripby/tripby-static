@@ -1,0 +1,5 @@
+Cessar o uso pode causar sintomas sérios de abstinência como a necessidade de usar mais cocaína, fome, irritabilidade, apatia, depressão, paranoia, pensamentos suicidas, perda de apetite sexual, insônia ou sonolência excessiva, tontura, tremores e sensação de frio. É comum que indivíduos viciados precisem usar a substância para não sentir esses efeitos desagradáveis.
+
+Uma overdose pode causar agitação, hostilidade, alucinações, convulsões, temperatura corporal alta, infarto e morte. Pessoas com problemas cardíacos, de pressão ou de tireóide devem evitar o uso por serem mais propensos a terem efeitos adversos.
+
+Uso intenso e regular é capaz de causar falta de cansaço, ansiedade, hiperexcitabilidade, paranoia, irritabilidade, insônia, perda de peso, entre outros sintomas. A inalação de qualquer substância pode danificar a cartilagem e a mucosa nasal, eventualmente levando a perfuração do septo que separa as narinas. Se injetada, pode levar a infeções e doenças ligadas ao compartilhamento de seringas.

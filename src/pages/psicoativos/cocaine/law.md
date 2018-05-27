@@ -1,0 +1,1 @@
+A cocaína e o crack se encontram proibidos na lista de substâncias sujeitas a controle especial da ANVISA no Brasil desde 1971, sendo proibidos sua produção, distribuição e posse.

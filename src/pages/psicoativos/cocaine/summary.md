@@ -1,0 +1,3 @@
+A cocaína é um derivado natural do sistema nervoso central extraído e refinado da planta Erytroxylum coca, comum na região dos andes na América do Sul. É um pó branco de gosto amargo, geralmente inalado. Moradores dos andes tem, por tradição, o costume de mastigar as folhas de coca junto de cinzas, liberando o alcalóide pra boca.
+
+Apesar da cocaína em pó poder ser fumada, é uma forma ineficiente de ingestão devido à queima da substância sob altas temperaturas. A pasta base (crack) pode ser vaporizada gerando efeitos mais fortes e rápidos do que a cocaína inalada.
