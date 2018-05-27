@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
               <div className="ml-2"><Icon.ChevronRight size={12} /></div>
             </div>
           </Link>
-          <hr />
+          <div className="my-5"><hr /></div>
           <h3 className="text-uppercase text-muted">Artigos</h3>
           <ul className="row list-unstyled mt-3">
             {articles.map((article) =>
