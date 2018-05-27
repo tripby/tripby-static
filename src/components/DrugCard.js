@@ -29,8 +29,8 @@ const DrugCard = ({ drug }) => (
               style={{
                 position: 'absolute',
                 top: 0,
-                left: 0,
-                width: '100%',
+                right: 0,
+                height: 56,
               }}
             />
           </div>
