@@ -1,0 +1,52 @@
+---
+title: "NBOMe: o doce amargo"
+date: "2015-05-06"
+path: "/artigos/nbome-o-doce-amargo"
+---
+
+Os seres humanos vêm consumindo substâncias capazes de induzir estados alterados da consciência há milhares de anos. Dentre elas, o grupo dos alucinógenos merece destaque devido às suas diversas funcionalidades, sendo usados em práticas religiosas, terapêuticasou recreativas. Graças aos entraves propostos por proibições após a Convenção de Drogas de 1961, o mundo passou a prestar atenção a esses compostos de forma negativa, esquecendo-se de sua carga histórica e valor cultural ou terapêutico.
+
+O proibicionismo não coibiu o surgimento de novos compostos, pelo contrário, foi durante essa época em que se viu um aumento vertiginoso no número de substâncias disponíveis. Quando novas substâncias são criadas à partir de moléculas de efeito já conhecidas, sua estrutura é modificada minimamente afim de escapar das punições legais e, ao mesmo tempo,  ser capaz de causar efeitos psicológicos. As _designer drugs_ ou _research chemicals_ (RC) não possuem efeitos tão bem estudados quanto os do [LSD](/psicoativos/lsd) ou outros alucinógenos. Dentre esses compostos, chamaremos atenção para um grupo que emergiu nas duas últimas décadas, aqui tratados por [LSD](/psicoativos/nbome).
+
+Chamadas de fenetilaminas, essas moléculas se popularizaram graças aos compostos do tipo 2C, os quais apresentam grupos _metoxi_nas posições 2 e 5 do anel aromático. Eles apareceram em meados dos anos 70 e foram descritos pelo pesquisador Alexander Shulgin em um de seus livros mais famosos chamado de PIHKAL, cuja tradução literal seria “Fenetilaminas que conheci e amei”. Seu efeito é semelhante ao do LSD, com usuários reportando efeitos positivos como euforia, alucinações, mudança de humor, aumento de criatividade e percepção sensorial. Ao mesmo tempo, podem causar dilatação na pupila, aumento na frequência cardíaca, náusea, insônia, paranoia, medo e pânico. Devido à semelhança e ao custo mais barato para produzir, essas substâncias vêm sendo vendidas como LSD. A adição de um grupo N-benzil aos compostos da série 2C (2C-B, 2C-I, 2C-D, etc) aumenta assustadoramente sua afinidade pelo receptor 5HT
+
+2A, e isso aumenta o risco do agonista ligar-se ao receptor e causar uma síndrome serotoninérgica.
+
+Apesar da aparente semelhança dos efeitos com os do LSD, há casos de pacientes que precisaram de apoio médico após consumir a substância. A mídia também trás casos de morte sendo que a época dos incidentes, a não realização de um exame toxicológico preciso, as atitudes tomadas pelos indivíduos e os sintomas dramáticosindicam que as mortes estejam mesmo não ligadas ao caso de uma “leva de LSD ruim” como os policiais acreditavam, mas NBOMe.
+
+Além dos efeitos psicológicos, essas substâncias parecem induzir taquicardia, hipertensão, agitação, acidose metabólica, convulsão, retenção urinária, taquipneia, agressividade, entre outros. Alguns exames toxicológicos revelam a presença de outros compostos na urina de pessoas que usaram o composto. Esse fato levanta a possibilidade de que as amostras disponíveis no mercado possam estar contaminadas por outros componentes de concentração desconhecida após a não conclusão das reações que deveriam originar os NBOMe desejados.  Deve-se buscar uma forma de detecção desses compostos em amostras de soro sanguíneo ou urina para facilitar a emissão de laudos médicos, visto que atualmente ainda se faz necessária a análise da amostra por espectrometria de massas para a inferência da estrutura da molécula.
+
+Para melhorar a literatura sobre essa substância, deve-se realizar experimentos para determinar seus efeitos a longo prazo, seu perfil de segurança e potencial aditivo. A morte de dois adolescentes no Brasil, um por ingestão sublinguale outro por inalação, reafirmam a presença dessa droga nos dias de hoje em mais de uma forma passível de ser consumida. Enquanto a versão em pó é tem efeito mais curto e mais intenso, com início de duração quase instantâneo, a versão sublingual demora algum tempo a ter seu efeito, mas parece durar por mais tempo.
+
+A overdosagem do composto parece ser mais arriscada quando o consumo é feito na forma em pó, visto que um papel absorvente, a unidade consumida de forma sublingual, não consegue conter muito mais do que 1mg da substância. Um caso clínico relata que 6 jovens consumiram 25I-NBOMe acreditando ser 2C-B. Apesar de o artigo não dizer a quantidade consumida por eles, pode-se supor que os mesmos tomaram de 5 a 25mg de 25I-NBOMe, intervalo de peso correspondente a uma dose leve ou comum de 2C-B.
+
+É importante reafirmar que o fato de os jovens não terem sofrido complicações mais acentuadas com a dose ingerida não confere confiabilidade e segurança ao composto. Os diversos casos de morte e acidentes a ele ligados parecem estar mais íntimos a criação de um comportamento que gera exposição a situações de risco do que a um risco fisiológico intrínseco. É necessário, portanto, entender qual a cascata de reações desencadeada pela ligação dos compostos com os receptores do tipo 5HT
+
+2Ae de que forma essa interação contribui para a geração do comportamento de risco observado nos pacientes.
+
+### Referências
+
+1. Schultes, R. E., Hofmann, A., & Rätsch, C. (2001). _Plants of the gods: their sacred, healing, and hallucinogenic powers_ (pp. 124-135). Rochester, VT: Healing Arts Press.
+2. McKenna, D. J., Callaway, J. C., & Grob, C. S. (1998). The scientific investigation of Ayahuasca: a review of past and current research. _The Heffter Review of Psychedelic Research_, _1_(65-77).
+3. McKenna, D. J. (2004). Clinical investigations of the therapeutic potential of ayahuasca: rationale and regulatory challenges. _Pharmacology & therapeutics_,_102_(2), 111-129.
+4. Parrott, A. C., & Stuart, M. (1997). Ecstasy(MDMA), amphetamine, and LSD: comparative mood profiles in recreational polydrug users. _Human Psychopharmacology Clinical and Experimental_, _12_(5), 501-504.
+5. [https://www.incb.org/documents/Narcotic-Drugs/1961-Convention/convention_1961_en.pdf](https://www.incb.org/documents/Narcotic-Drugs/1961-Convention/convention_1961_en.pdf)[25.10.2014]
+6. Buchanan, J. F., & Brown, C. R. (1988). Designer drugs. _Medical toxicology and adverse drug experience_, _3_(1), 1-17.
+7. Soh, Y. N. A., & Elliott, S. (2013). An investigation of the stability of emerging new psychoactive substances. _Drug Testing and Analysis_, _6_(7-8), 696–704. doi:10.1002/dta.1576
+8. Shulgin, A., & Shulgin, A. (1991). _PIHKAL: a chemical love story_. Transform Pr.
+9. [http://www.erowid.org/chemicals/nbome/nbome_effects.shtml](http://www.erowid.org/chemicals/nbome/nbome_effects.shtml)[25.10.2014]
+10. Ninnemann, A., & Stuart, G. L. (2013). The NBOMe Series: A Novel, Dangerous Group of Hallucinogenic Drugs [OPEN ACCESS]. _Journal of studies on alcohol and drugs_, _74_(6), 977.
+11. Braden, M. R., Parrish, J. C., Naylor, J. C., & Nichols, D. E. (2006). Molecular interaction of serotonin 5-HT2A receptor residues Phe339 (6.51) and Phe340 (6.52) with superpotent N-benzyl phenethylamine agonists. _Molecular pharmacology_, _70_(6), 1956-1964.
+12. Stellpflug, S. J., Kealey, S. E., Hegarty, C. B., & Janis, G. C. (2014). 2-(4-Iodo-2,5-dimethoxyphenyl)-N-[(2-methoxyphenyl)methyl]ethanamine (25I-NBOMe): clinical case with unique confirmatory testing. _Journal of Medical Toxicology : Official Journal of the American College of Medical Toxicology_, _10_(1), 45–50. doi:10.1007/s13181-013-0314-y
+13. Rose, S. R., Poklis, J. L., & Poklis, A. (2013). A case of 25I-NBOMe (25-I) intoxication: a new potent 5-HT2A agonist designer drug. _Clinical Toxicology (Philadelphia, Pa.)_, _51_(3), 174–7. doi:10.3109/15563650.2013.772191
+14. Hill, S. L., Doris, T., Gurung, S., Katebe, S., Lomas, A., Dunn, M., … Thomas, S. H. L. (2013). Severe clinical toxicity associated with analytically confirmed recreational use of 25I-NBOMe: case series. _Clinical Toxicology (Philadelphia, Pa.)_, _51_(6), 487–92. doi:10.3109/15563650.2013.802795
+15. [http://www.smh.com.au/nsw/teen-jumps-to-his-death-after-150-drug-hit-20130606-2nrpe.html](http://www.smh.com.au/nsw/teen-jumps-to-his-death-after-150-drug-hit-20130606-2nrpe.html) [25.10.2014]
+16. [http://www.news.com.au/national/nsw-act/teenager-nick-mitchells-lsd-overdose-death-delusions-and-despair/story-fndo4bst-1226530792737](http://www.news.com.au/national/nsw-act/teenager-nick-mitchells-lsd-overdose-death-delusions-and-despair/story-fndo4bst-1226530792737) [25.10.2014]
+17. [http://www.news.com.au/national/roberto-laudisio-curti-heard-messages-from-god-inquest-hears/story-fncynjr2-1226490950032](http://www.news.com.au/national/roberto-laudisio-curti-heard-messages-from-god-inquest-hears/story-fncynjr2-1226490950032) [25.10.2014]
+18. [http://www.indyweek.com/indyweek/an-apex-teen-dies-of-an-overdose-of-synthetic-lsd/Content?oid=3837336](http://www.indyweek.com/indyweek/an-apex-teen-dies-of-an-overdose-of-synthetic-lsd/Content?oid=3837336)[25.10.2014]
+19. [http://www.abc.net.au/7.30/content/2013/s3820575.htm](http://www.abc.net.au/7.30/content/2013/s3820575.htm)[25.10.2014]
+20. [http://www1.folha.uol.com.br/cotidiano/2014/10/1533238-estudante-encontrado-morto-usou-droga-e-se-afogou-na-usp-diz-laudo.shtml](http://www1.folha.uol.com.br/cotidiano/2014/10/1533238-estudante-encontrado-morto-usou-droga-e-se-afogou-na-usp-diz-laudo.shtml)[25.10.2014]
+21. [http://g1.globo.com/sao-paulo/sao-jose-do-rio-preto-aracatuba/noticia/2014/10/estudante-alemao-morreu-por-overdose-confirma-laudo-do-iml.html](http://g1.globo.com/sao-paulo/sao-jose-do-rio-preto-aracatuba/noticia/2014/10/estudante-alemao-morreu-por-overdose-confirma-laudo-do-iml.html) [25.10.2014]
+22. Lawn, W., Barratt, M., Williams, M., Horne, A., & Winstock, A. (2014). The NBOMe hallucinogenic drug series: Patterns of use, characteristics of users and self-reported effects in a large international sample. _Journal of Psychopharmacology (Oxford, England)_, _28_(8), 780–788. doi:10.1177/0269881114523866
+23. [http://www.erowid.org/chemicals/2cb/2cb_dose.shtml](http://www.erowid.org/chemicals/2cb/2cb_dose.shtml)[25.10.2014]
+24. Halberstadt, A. L., & Geyer, M. a. (2014). Effects of the hallucinogen 2,5-dimethoxy-4-iodophenethylamine (2C-I) and superpotent N-benzyl derivatives on the head twitch response. _Neuropharmacology_, _77_, 200–7. doi:10.1016/j.neuropharm.2013.08.025
