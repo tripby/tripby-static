@@ -19,7 +19,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     {
       drugs: allMarkdownRemark(
           limit: 1000
-          filter: {id: {regex: "/psicoativos\/([^\s]+)\/index/"} }
+          filter: {id: {regex: "/index/"} }
         ) {
           edges {
             node {
