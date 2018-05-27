@@ -128,7 +128,7 @@ class Drug extends Component {
                         <div className="mr-2 d-flex">
                           {route.dosage && (<small>dosagem</small>)}
                           {(route.dosage && route.duration) && (<small className="mx-1">/</small>)}
-                          {route.dosage && (<small>duração</small>)}
+                          {route.duration && (<small>duração</small>)}
                         </div>
                         {this.state.activeRoute === route.name ? <Icon.ChevronUp /> : (route.duration || route.dosage) && <Icon.ChevronDown />}
                       </div>
@@ -176,16 +176,10 @@ class Drug extends Component {
                                     <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.heavy}</td>
                                   </tr>
                                 )}
-                                {route.dosage.childMarkdownRemark.frontmatter.afterEffects && (
+                                {route.dosage.childMarkdownRemark.frontmatter.overdose && (
                                   <tr>
-                                    <td>Efeitos posteriores</td>
-                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.afterEffects}</td>
-                                  </tr>
-                                )}
-                                {route.dosage.childMarkdownRemark.frontmatter.hangover && (
-                                  <tr>
-                                    <td>Ressaca</td>
-                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.hangover}</td>
+                                    <td>Overdose</td>
+                                    <td className="text-right">{route.dosage.childMarkdownRemark.frontmatter.overdose}</td>
                                   </tr>
                                 )}
                               </tbody>
