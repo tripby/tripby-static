@@ -4,9 +4,11 @@ import * as Icon from 'react-feather'
 
 import FeaturedContent from '../components/FeaturedContent'
 import DrugCard from '../components/DrugCard'
+import ArticleCard from '../components/ArticleCard'
 
 const IndexPage = ({ data }) => {
   const drugs = data.drugs.edges
+  const articles = data.articles.edges
   return (
     <div>
       <FeaturedContent tagline="Leia a bula." />
@@ -26,6 +28,22 @@ const IndexPage = ({ data }) => {
           <Link to="/psicoativos">
             <div className="d-inline-flex align-items-center text-uppercase font-weight-normal">
               Todos os psicoativos
+              <div className="ml-2"><Icon.ChevronRight size={12} /></div>
+            </div>
+          </Link>
+          <hr />
+          <h3 className="text-uppercase text-muted">Artigos</h3>
+          <ul className="row list-unstyled mt-3">
+            {articles.map((article) =>
+              (
+                <li className="col-12 col-md-6">
+                  <ArticleCard article={article.node} />
+                </li>
+              ))}
+          </ul>
+          <Link to="/artigos">
+            <div className="d-inline-flex align-items-center text-uppercase font-weight-normal">
+              Todos os artigos
               <div className="ml-2"><Icon.ChevronRight size={12} /></div>
             </div>
           </Link>
@@ -53,6 +71,21 @@ export const query = graphql`
             molecules
             aliases
           }
+        }
+      }
+    }
+    articles: allMarkdownRemark(
+      limit: 6
+      filter: {id: {regex: "/artigos/"} }  
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+          }
+          excerpt
         }
       }
     }
