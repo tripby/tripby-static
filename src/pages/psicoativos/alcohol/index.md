@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/alcool"
 
-featured: true
+featured: false
 
 name: Álcool
 

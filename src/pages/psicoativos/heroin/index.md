@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/heroina"
 
-featured: true
+featured: false
 
 name: Heroína
 

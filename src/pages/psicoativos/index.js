@@ -15,7 +15,7 @@ const Drugs = ({ data }) => {
           <ul className="row list-unstyled mt-3">
             {drugs.map((drug) =>
               (
-                <li className="col-12 col-md-4">
+                <li className="col-12 col-md-6 col-xl-4">
                   <DrugCard
                     drug={drug.node.frontmatter}
                   />
@@ -33,6 +33,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 1000
       filter: {id: {regex: "/index/"} }
+      sort: {order: ASC, fields: [frontmatter___name]}
     ) {
       edges {
         node {

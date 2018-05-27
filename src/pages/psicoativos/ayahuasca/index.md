@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/ayahuasca"
 
-featured: true
+featured: false
 
 name: Ayahuasca
 

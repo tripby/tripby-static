@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/ketamine"
 
-featured: true
+featured: false
 
 name: Ketamina
 

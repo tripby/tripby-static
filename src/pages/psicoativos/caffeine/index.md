@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/cafeina"
 
-featured: true
+featured: false
 
 name: Cafeína
 

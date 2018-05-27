@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/metanfetamina"
 
-featured: true
+featured: false
 
 name: Metanfetamina
 

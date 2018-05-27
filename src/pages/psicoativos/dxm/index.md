@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/dxm"
 
-featured: true
+featured: false
 
 name: DXM
 

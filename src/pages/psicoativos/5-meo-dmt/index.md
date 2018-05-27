@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/5-meo-dmt"
 
-featured: true
+featured: false
 
 name: 5-MeO-DMT
 

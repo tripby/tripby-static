@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/ibogaina"
 
-featured: true
+featured: false
 
 name: Ibogaína
 

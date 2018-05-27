@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/mdma"
 
-featured: true
+featured: false
 
 name: MDMA
 

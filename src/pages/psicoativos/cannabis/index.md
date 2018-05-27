@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/maconha"
 
-featured: true
+featured: false
 
 name: Maconha
 

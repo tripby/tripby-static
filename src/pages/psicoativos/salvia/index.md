@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/salvia"
 
-featured: true
+featured: false
 
 name: "Sálvia"
 

@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/mescalina"
 
-featured: true
+featured: false
 
 name: Mescalina
 

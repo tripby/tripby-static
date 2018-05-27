@@ -1,7 +1,7 @@
 ---
 path: "/psicoativos/ghb"
 
-featured: true
+featured: false
 
 name: GHB
 
