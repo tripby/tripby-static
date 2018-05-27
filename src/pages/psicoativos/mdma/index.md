@@ -1,6 +1,8 @@
 ---
 path: "/psicoativos/mdma"
 
+featured: true
+
 name: MDMA
 
 molecules: ["mdma"]
