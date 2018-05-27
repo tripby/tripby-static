@@ -7,7 +7,9 @@ const Articles = ({ data }) => {
     <div>
       <section className="py-3 py-md-4 bg-blueLighter">
         <div className="container">
-          <h4 className="text-uppercase text-muted"><strong>Artigos</strong></h4>
+          <h4 className="text-uppercase text-muted">
+            <strong>Redução de danos</strong>
+          </h4>
         </div>
       </section>
       <section className="py-3 py-md-4">
