@@ -75,7 +75,7 @@ export const query = graphql`
       }
     }
     articles: allMarkdownRemark(
-      limit: 6
+      limit: 2
       filter: {id: {regex: "/artigos/"} }  
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
