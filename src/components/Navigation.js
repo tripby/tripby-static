@@ -11,6 +11,7 @@ import classnames from 'classnames'
 import * as Icon from 'react-feather'
 
 import Hamburger from './Hamburger'
+import SocialMedia from './SocialMedia'
 
 
 const logo = require('../assets/images/logo.svg')
@@ -54,37 +55,46 @@ class Navigation extends React.Component {
     })
     return (
       <div className="header py-3 py-md-4">
-        <div className="container">
-          <div className="d-flex align-items-center justify-content-between">
-            <Link to="/"><img src={logo} alt="TRIPBY" className="logo mb-0 mb-md-5" /></Link>
-            <div className="d-inline-flex">
-              {/* <Link to="/search">
-              <div className="d-md-none text-uppercase mr-2">
-                <Icon.Search size={24} />
+        <div className="container h-100">
+          <div className="d-flex flex-column h-100">
+            <div className="flex-1">
+              <div className="d-flex align-items-center justify-content-between">
+                <div className="mb-0 mb-md-5">
+                  <Link to="/">
+                    <img src={logo} alt="TRIPBY" className="logo" />
+                  </Link>
+                </div>
+                <div className="d-inline-flex">
+                  {/* <Link to="/search">
+                  <div className="d-md-none text-uppercase mr-2">
+                    <Icon.Search size={24} />
+                  </div>
+                </Link> */}
+                  <span className="d-md-none"><Hamburger onClick={this.handleNav} navOpened={this.state.navOpened} /></span>
+                </div>
               </div>
-            </Link> */}
-              <span className="d-md-none"><Hamburger onClick={this.handleNav} navOpened={this.state.navOpened} /></span>
+              <nav className={navClasses}>
+                <ul className="nav flex-column">
+                  {items.map((item) => {
+                    const ParsedIcon = Icon[item.icon]
+                    return (
+                      <li key={item.link}>
+                        <Link to={item.link} onClick={() => this.setState({ navOpened: false })}>
+                          <div className="d-flex align-items-center">
+                            <span className="mr-2 d-inline-flex align-items-center">
+                              <ParsedIcon size={24} />
+                            </span>
+                            <span>{item.label}</span>
+                          </div>
+                        </Link>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </nav>
             </div>
+            <div className="d-none d-md-block"><SocialMedia /></div>
           </div>
-          <nav className={navClasses}>
-            <ul className="nav flex-column">
-              {items.map((item) => {
-                const ParsedIcon = Icon[item.icon]
-                return (
-                  <li key={item.link}>
-                    <Link to={item.link} onClick={() => this.setState({ navOpened: false })}>
-                      <div className="d-flex align-items-center">
-                        <span className="mr-2 d-inline-flex align-items-center">
-                          <ParsedIcon size={24} />
-                        </span>
-                        <span>{item.label}</span>
-                      </div>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </nav>
         </div>
       </div>
     )
