@@ -27,6 +27,11 @@ const items = [
     icon: 'Book',
   },
   {
+    label: 'Shop',
+    link: '/shop',
+    icon: 'ShoppingBag',
+  },
+  {
     label: 'Sobre',
     link: '/sobre',
     icon: 'Info',
