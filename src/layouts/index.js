@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Navigation from '../components/Navigation'
+import SocialMedia from '../components/SocialMedia'
 import '../assets/styles/main.scss'
 
 const Layout = ({ children, data }) => (
@@ -28,6 +29,11 @@ const Layout = ({ children, data }) => (
         <div style={{ flex: 1 }} className="d-flex flex-column">
           {children()}
         </div>
+      </div>
+    </div>
+    <div className="d-md-none py-3">
+      <div className="container">
+        <SocialMedia />
       </div>
     </div>
   </div>
