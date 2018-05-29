@@ -1,10 +1,21 @@
 .header {
-  height: 100%;
+  background: white;
   @include media-breakpoint-down(md) {
     border-bottom: 1px solid map-get($colors, greyLight);
   }
   @include media-breakpoint-up(md) {
     border-right: 1px solid map-get($colors, greyLight);
+    z-index: 3;
+    height: 100vh;
+    position: fixed;
+    flex: 0 0 25%;
+    max-width: 25%;
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+    width: 100%;
   }
   svg {
     fill: none;

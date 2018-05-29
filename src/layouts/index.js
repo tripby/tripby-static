@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
     </Helmet>
-    <div className="row flex-column flex-md-row no-gutters justify-content-stretch" style={{ minHeight: '100vh' }}>
+    <div className="row flex-column no-gutters flex-md-row justify-content-stretch" style={{ minHeight: '100vh' }}>
       <div className="col-12 col-md-3 col-lg-2">
         <Navigation />
       </div>
