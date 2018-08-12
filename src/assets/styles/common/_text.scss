@@ -29,6 +29,10 @@ html {
     text-decoration: none;
     color: map-get($colors, blueLight) !important;
   }
+
+  a.btn:hover {
+    color: unset;
+  }
   
   strong {
     font-weight: bold;
