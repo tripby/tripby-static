@@ -27,4 +27,7 @@ $colors: (
   .badge-#{nth($value, 1)} {
     background-color: nth($value, 2);
   }
+  .border-#{nth($value, 1)} {
+    border-color: nth($value, 2);
+  }
 }
