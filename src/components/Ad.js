@@ -67,8 +67,9 @@ export default class Ad extends Component {
               }}
             >
               <a
-                href=""
+                href="https://tripby.bigcartel.com"
                 className="btn btn-outline border-green text-white d-inline-flex align-items-center justify-content-center mb-1"
+                target="_blank"
               >
                 Shop
                 <Icon.ExternalLink size={16} className="ml-2" />
