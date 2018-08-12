@@ -24,12 +24,14 @@ const currentAdId = 14
 
 export default class Ad extends Component {
   hide() {
-    localStorage.setItem(`hideAd${currentAdId}`, true)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(`hideAd${currentAdId}`, true)
+    }
     this.forceUpdate()
   }
   render() {
     const { className, children, sizes } = this.props
-    if (!localStorage.getItem(`hideAd${currentAdId}`)) {
+    if (typeof window !== 'undefined' && !localStorage.getItem(`hideAd${currentAdId}`)) {
       return (
         <Card className={`card ${className}`}>
           <Background>
