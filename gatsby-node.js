@@ -117,7 +117,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then((result) => { //eslint-disable-line
-    console.log(result)
     if (result.errors) {
       return Promise.reject(result.errors)
     }
