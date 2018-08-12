@@ -9,6 +9,7 @@ import * as Icon from 'react-feather'
 import { Collapse } from 'reactstrap'
 
 import Alert from '../components/Alert'
+import Ad from '../components/Ad'
 
 const tabStyle = {
   color: '#ee6e73',
@@ -75,7 +76,7 @@ class Drug extends Component {
     }
   }
   render() {
-    const { drug } = this.props.pathContext
+    const { drug, adImage } = this.props.pathContext
     return (
       <div>
         <Helmet
@@ -250,6 +251,11 @@ class Drug extends Component {
                     </Collapse>
                   </div>
                 ))}
+                <Ad className="mt-3" sizes={adImage.sizes}>
+                  <h5 className="text-white">
+                    <strong>Contribua com o TRIPBY e leve uma arte 😉</strong>
+                  </h5>
+                </Ad>
               </div>
               <div className="col-12 col-lg-8 mt-3">
                 <div className="card" style={{ borderRadius: '4px' }}>

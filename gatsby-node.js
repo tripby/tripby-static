@@ -17,6 +17,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
+      adImage: file(
+        relativePath: {eq: "assets/images/ads/14.png"},
+      ) {
+        childImageSharp {
+          sizes {
+            srcSet
+          }
+        }
+      }
       drugs: allMarkdownRemark(
           limit: 1000
           filter: {id: {regex: "/index/"} }
@@ -108,6 +117,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then((result) => { //eslint-disable-line
+    console.log(result)
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -117,6 +127,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: drugTemplate,
         context: {
           drug: node.frontmatter,
+          adImage: result.data.adImage.childImageSharp,
         }, // additional data can be passed via context
       })
     })
