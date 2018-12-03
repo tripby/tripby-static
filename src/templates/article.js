@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import Layout from '../layouts'
 
 const Article = (props) => {
-  const { article } = props.pathContext
+  const { article } = props.pageContext
   return (
     <Layout>
       <div>

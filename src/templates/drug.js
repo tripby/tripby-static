@@ -48,7 +48,7 @@ class Drug extends Component {
     }
   }
   mapTabs() {
-    const { drug } = this.props.pathContext
+    const { drug } = this.props.pageContext
     return defaultTabs.map((tab) => (
       <Tab
         style={tabStyle}
@@ -65,7 +65,7 @@ class Drug extends Component {
     navigate(`${location.pathname}?tab=${tabId}`)
   }
   render() {
-    const { drug, adImage } = this.props.pathContext
+    const { drug, adImage } = this.props.pageContext
     return (
       <Layout>
         <div>
@@ -412,7 +412,7 @@ class Drug extends Component {
 }
 
 Drug.propTypes = {
-  pathContext: PropTypes.object,
+  pageContext: PropTypes.object,
   location: PropTypes.object,
 }
 
