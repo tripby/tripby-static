@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery } from 'gatsby'
 import ArticleCard from '../../components/ArticleCard'
-import Layout from '../../layouts'
+import Layout from '../../Layout'
 
 const Articles = () => (
   <Layout>

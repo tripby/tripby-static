@@ -1,6 +1,5 @@
 import React from 'react'
-import Markdown from 'react-markdown'
-import Layout from '../layouts'
+import Layout from '../Layout'
 
 const Article = (props) => {
   const { article } = props.pageContext

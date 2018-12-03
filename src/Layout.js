@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Navigation from '../components/Navigation'
-import SocialMedia from '../components/SocialMedia'
-import '../assets/styles/main.scss'
+import Navigation from './components/Navigation'
+import SocialMedia from './components/SocialMedia'
+import './assets/styles/main.scss'
 
 const Layout = ({ children }) => (
   <div>
