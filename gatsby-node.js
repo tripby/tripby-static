@@ -6,20 +6,17 @@
 
 // You can delete this file if you're not using it
 
-
 const path = require('path')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   const drugTemplate = path.resolve('./src/templates/drug.js')
   const articleTemplate = path.resolve('./src/templates/article.js')
 
   return graphql(`
     {
-      adImage: file(
-        relativePath: {eq: "assets/images/ads/14.png"},
-      ) {
+      adImage: file(relativePath: { eq: "assets/images/ads/14.png" }) {
         childImageSharp {
           sizes {
             srcSet
@@ -27,81 +24,81 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
       drugs: allMarkdownRemark(
-          limit: 1000
-          filter: {id: {regex: "/index/"} }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                path
-                name
-                class
-                aliases
-                summary {
-                  childMarkdownRemark {
-                    internal {
-                      content
-                    }
+        limit: 1000
+        filter: { fileAbsolutePath: { regex: "/index/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              name
+              class
+              aliases
+              summary {
+                childMarkdownRemark {
+                  internal {
+                    content
                   }
                 }
-                health {
-                  childMarkdownRemark {
-                    internal {
-                      content
-                    }
-                  }
-                }
-                law {
-                  childMarkdownRemark {
-                    internal {
-                      content
-                    }
-                  }
-                }
-                routes {
-                  name
-                  duration {
-                    childMarkdownRemark {
-                      frontmatter {
-                        total
-                        onset
-                        comeup
-                        peak
-                        offset
-                        afterEffects
-                        hangover
-                      }
-                    }
-                  }
-                  dosage {
-                    childMarkdownRemark {
-                      frontmatter {
-                        threshold
-                        light
-                        common
-                        strong
-                        heavy
-                      }
-                    }
-                  }
-                }
-                effects {
-                  childMarkdownRemark {
-                    internal {
-                      content
-                    }
-                  }
-                }
-                molecules
-                erowid
-                psychonautwiki
               }
+              health {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
+              law {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
+              routes {
+                name
+                duration {
+                  childMarkdownRemark {
+                    frontmatter {
+                      total
+                      onset
+                      comeup
+                      peak
+                      offset
+                      afterEffects
+                      hangover
+                    }
+                  }
+                }
+                dosage {
+                  childMarkdownRemark {
+                    frontmatter {
+                      threshold
+                      light
+                      common
+                      strong
+                      heavy
+                    }
+                  }
+                }
+              }
+              effects {
+                childMarkdownRemark {
+                  internal {
+                    content
+                  }
+                }
+              }
+              molecules
+              erowid
+              psychonautwiki
             }
           }
         }
+      }
       articles: allMarkdownRemark(
         limit: 1000
-        filter: {id: {regex: "/artigos/"} }
+        filter: { fileAbsolutePath: { regex: "/artigos/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         edges {
@@ -116,7 +113,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-  `).then((result) => { //eslint-disable-line
+  `).then((result) => {
+    //eslint-disable-line
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -141,4 +139,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     })
   })
 }
-
