@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery } from 'gatsby'
 import DrugCard from '../../components/DrugCard'
-import Layout from '../../layouts'
+import Layout from '../../Layout'
 
 const Drugs = () => (
   <Layout>

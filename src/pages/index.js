@@ -6,9 +6,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import FeaturedContent from '../components/FeaturedContent'
 import DrugCard from '../components/DrugCard'
 import ArticleCard from '../components/ArticleCard'
-import Layout from '../layouts'
+import Layout from '../Layout'
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <StaticQuery
       query={graphql`

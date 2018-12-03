@@ -9,7 +9,7 @@ import { Collapse } from 'reactstrap'
 
 import Alert from '../components/Alert'
 import Ad from '../components/Ad'
-import Layout from '../layouts';
+import Layout from '../Layout'
 
 const tabStyle = {
   color: '#ee6e73',
@@ -32,7 +32,7 @@ class Drug extends Component {
     const { location } = this.props
     let index = 0
     if (location.search) {
-      const { tab } = qs.parse(location.search, {ignoreQueryPrefix: true})
+      const { tab } = qs.parse(location.search, { ignoreQueryPrefix: true })
       const tabIndex = defaultTabs.findIndex((t) => t.id === tab)
       if (tabIndex >= 0) {
         index = tabIndex
@@ -48,7 +48,7 @@ class Drug extends Component {
     }
   }
   mapTabs() {
-    const { drug } = this.props.pathContext
+    const { drug } = this.props.pageContext
     return defaultTabs.map((tab) => (
       <Tab
         style={tabStyle}
@@ -65,7 +65,7 @@ class Drug extends Component {
     navigate(`${location.pathname}?tab=${tabId}`)
   }
   render() {
-    const { drug, adImage } = this.props.pathContext
+    const { drug, adImage } = this.props.pageContext
     return (
       <Layout>
         <div>
@@ -129,7 +129,9 @@ class Drug extends Component {
                           <div className="mr-2 d-flex">
                             {route.dosage && <small>dosagem</small>}
                             {route.dosage &&
-                              route.duration && <small className="mx-1">/</small>}
+                              route.duration && (
+                              <small className="mx-1">/</small>
+                            )}
                             {route.duration && <small>duração</small>}
                           </div>
                           {this.state.activeRoute === route.name ? (
@@ -253,8 +255,8 @@ class Drug extends Component {
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .total && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.total && (
                                     <tr>
                                       <td>Total</td>
                                       <td className="text-right">
@@ -265,8 +267,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .onset && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.onset && (
                                     <tr>
                                       <td>Início</td>
                                       <td className="text-right">
@@ -277,8 +279,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .comeup && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.comeup && (
                                     <tr>
                                       <td>Primeiras sensações</td>
                                       <td className="text-right">
@@ -289,8 +291,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .peak && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.peak && (
                                     <tr>
                                       <td>Pico</td>
                                       <td className="text-right">
@@ -301,8 +303,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .offset && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.offset && (
                                     <tr>
                                       <td>Diminuição</td>
                                       <td className="text-right">
@@ -313,8 +315,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .afterEffects && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.afterEffects && (
                                     <tr>
                                       <td>Efeitos posteriores</td>
                                       <td className="text-right">
@@ -325,8 +327,8 @@ class Drug extends Component {
                                       </td>
                                     </tr>
                                   )}
-                                  {route.duration.childMarkdownRemark.frontmatter
-                                    .hangover && (
+                                  {route.duration.childMarkdownRemark
+                                    .frontmatter.hangover && (
                                     <tr>
                                       <td>Ressaca</td>
                                       <td className="text-right">
@@ -376,9 +378,9 @@ class Drug extends Component {
                         <TabPanel>
                           <Alert icon="Info" type="info">
                             Os efeitos listados abaixo raramente (ou nunca)
-                            ocorrerão de uma só vez, mas doses maiores aumentarão
-                            as chances e são mais propensas a induzir uma gama
-                            completa de efeitos.
+                            ocorrerão de uma só vez, mas doses maiores
+                            aumentarão as chances e são mais propensas a induzir
+                            uma gama completa de efeitos.
                           </Alert>
                           <Markdown
                             source={
@@ -395,7 +397,9 @@ class Drug extends Component {
                         </TabPanel>
                         <TabPanel>
                           <Markdown
-                            source={drug.law.childMarkdownRemark.internal.content}
+                            source={
+                              drug.law.childMarkdownRemark.internal.content
+                            }
                           />
                         </TabPanel>
                       </div>
@@ -412,7 +416,7 @@ class Drug extends Component {
 }
 
 Drug.propTypes = {
-  pathContext: PropTypes.object,
+  pageContext: PropTypes.object,
   location: PropTypes.object,
 }
 
