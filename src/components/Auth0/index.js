@@ -17,7 +17,7 @@ import { Location } from '@reach/router'
 import setUser from './actions'
 import Identicon from '../Identicon'
 
-const localStorage = typeof localStorage !== 'undefined' ? undefined : {}
+const localStorage = typeof localStorage !== 'undefined' ? localStorage : {}
 
 class Auth0 extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
