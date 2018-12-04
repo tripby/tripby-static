@@ -10,14 +10,10 @@ import auth0 from 'auth0-js'
 import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 import { connect } from 'react-redux'
-import { browserHistory } from 'react-router'
 import * as Icon from 'react-feather'
-import { Location } from '@reach/router'
 
 import setUser from './actions'
 import Identicon from '../Identicon'
-
-const localStorage = typeof window !== 'undefined' ? window.localStorage : {}
 
 class Auth0 extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -45,7 +41,8 @@ class Auth0 extends React.Component {
     ) {
       this.logout()
     } else if (
-      this.props.location.pathname === '/authorize' &&
+      (this.props.location.pathname === '/authorize' ||
+        this.props.location.pathname === '/authorize/') &&
       this.props.location.hash
     ) {
       this.parseHash()
@@ -200,7 +197,14 @@ function mapDispatchToProps(dispatch) {
 export default compose(
   graphql(createUser, { options: { refetchQueries: ['checkUser'] } }),
   graphql(checkUser, {
-    options: { variables: { userId: localStorage.getItem('userId') } },
+    options: {
+      variables: {
+        userId:
+          typeof localStorage !== 'undefined'
+            ? localStorage.getItem('userId')
+            : '',
+      },
+    },
   })
 )(connect(
   null,
