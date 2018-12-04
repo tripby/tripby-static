@@ -1,8 +1,8 @@
 /**
-*
-* Navigation
-*
-*/
+ *
+ * Navigation
+ *
+ */
 
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -10,9 +10,10 @@ import Link from 'gatsby-link'
 import classnames from 'classnames'
 import * as Icon from 'react-feather'
 
+import Auth0 from './Auth0'
 import Hamburger from './Hamburger'
 import SocialMedia from './SocialMedia'
-
+import { Location } from '@reach/router'
 
 const logo = require('../assets/images/logo.svg')
 
@@ -38,7 +39,6 @@ const items = [
     icon: 'Info',
   },
 ]
-
 
 class Navigation extends React.Component {
   constructor() {
@@ -75,7 +75,12 @@ class Navigation extends React.Component {
                     <Icon.Search size={24} />
                   </div>
                 </Link> */}
-                  <span className="d-md-none"><Hamburger onClick={this.handleNav} navOpened={this.state.navOpened} /></span>
+                  <span className="d-md-none">
+                    <Hamburger
+                      onClick={this.handleNav}
+                      navOpened={this.state.navOpened}
+                    />
+                  </span>
                 </div>
               </div>
               <nav className={navClasses}>
@@ -84,7 +89,10 @@ class Navigation extends React.Component {
                     const ParsedIcon = Icon[item.icon]
                     return (
                       <li key={item.link}>
-                        <Link to={item.link} onClick={() => this.setState({ navOpened: false })}>
+                        <Link
+                          to={item.link}
+                          onClick={() => this.setState({ navOpened: false })}
+                        >
                           <div className="d-flex align-items-center">
                             <span className="mr-2 d-inline-flex align-items-center">
                               <ParsedIcon size={24} />
@@ -95,10 +103,19 @@ class Navigation extends React.Component {
                       </li>
                     )
                   })}
+                  <li>
+                    <Location>
+                      {({ location, navigate }) => (
+                        <Auth0 location={location} navigate={navigate} />
+                      )}
+                    </Location>
+                  </li>
                 </ul>
               </nav>
             </div>
-            <div className="d-none d-md-block"><SocialMedia /></div>
+            <div className="d-none d-md-block">
+              <SocialMedia />
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +123,6 @@ class Navigation extends React.Component {
   }
 }
 
-Navigation.propTypes = {
-}
+Navigation.propTypes = {}
 
 export default Navigation
