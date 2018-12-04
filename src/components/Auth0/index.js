@@ -28,7 +28,7 @@ class Auth0 extends React.Component {
       clientID: 'dxItVoNZ8RL7g_SC26qXKLJzlgywHPYp',
       redirectUri:
         process.env.NODE_ENV === 'production'
-          ? `https://${process.env.DOMAIN}/authorize`
+          ? `https://${process.env.GATSBY_DOMAIN}/authorize`
           : 'http://localhost:8000/authorize',
       responseType: 'token id_token',
       scope: 'openid profile email',
