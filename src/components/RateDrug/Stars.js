@@ -16,17 +16,7 @@ const FullStar = styled(Star).attrs({
 `
 
 const Stars = ({ total, isLoading, ...props }) => (
-  <Flex alignItems="center">
-    <Rating emptySymbol={<Star />} fullSymbol={<FullStar />} {...props} />
-    {!isLoading && props.initialRating && total && (
-      <Flex ml={2} alignItems="center">
-        <p className="font-weight-bold mb-0">
-          {props.initialRating.toFixed(1)}
-        </p>
-        <p className="ml-2 mb-0 text-muted">({total} reviews)</p>
-      </Flex>
-    )}
-  </Flex>
+  <Rating emptySymbol={<Star />} fullSymbol={<FullStar />} {...props} />
 )
 
 Stars.propTypes = {
