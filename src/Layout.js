@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { withRouter } from 'react-router'
 
-import Navigation from '../components/Navigation'
-import SocialMedia from '../components/SocialMedia'
-import '../assets/styles/main.scss'
+import Navigation from './components/Navigation'
+import SocialMedia from './components/SocialMedia'
+import './assets/styles/main.scss'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet title="TRIPBY · Leia a bula">
       <meta
@@ -65,17 +64,7 @@ const Layout = ({ children, data }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node,
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../layouts'
+import Layout from '../Layout'
 
 const Shop = () => (
   <Layout>
