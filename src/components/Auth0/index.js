@@ -10,14 +10,10 @@ import auth0 from 'auth0-js'
 import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 import { connect } from 'react-redux'
-import { browserHistory } from 'react-router'
 import * as Icon from 'react-feather'
-import { Location } from '@reach/router'
 
 import setUser from './actions'
 import Identicon from '../Identicon'
-
-const localStorage = typeof localStorage !== 'undefined' ? undefined : {}
 
 class Auth0 extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
@@ -39,15 +35,19 @@ class Auth0 extends React.Component {
   }
   componentDidMount() {
     const now = Date.parse(new Date())
-    if (localStorage.tokenExpires && now > localStorage.tokenExpires) {
+    if (
+      localStorage.getItem('tokenExpires') &&
+      now > localStorage.getItem('tokenExpires')
+    ) {
       this.logout()
     } else if (
-      this.props.location.pathname === '/authorize' &&
+      (this.props.location.pathname === '/authorize' ||
+        this.props.location.pathname === '/authorize/') &&
       this.props.location.hash
     ) {
       this.parseHash()
-    } else if (localStorage.userId) {
-      this.checkUser(localStorage.userId)
+    } else if (localStorage.getItem('userId')) {
+      this.checkUser(localStorage.getItem('userId'))
     }
   }
   componentDidUpdate(prevProps) {
@@ -63,7 +63,7 @@ class Auth0 extends React.Component {
     this.setState({})
   }
   login() {
-    localStorage.pathname = this.props.location.pathname
+    localStorage.setItem('pathname', this.props.location.pathname)
     this.auth.authorize()
   }
   createUser(idToken, email) {
@@ -90,9 +90,9 @@ class Auth0 extends React.Component {
         }
       })
       .then(() => {
-        if (localStorage.pathname) {
+        if (localStorage.getItem('pathname')) {
           const { navigate } = this.props
-          navigate(localStorage.pathname)
+          navigate(localStorage.getItem('pathname'))
           localStorage.removeItem('pathname')
         }
       })
@@ -109,9 +109,12 @@ class Auth0 extends React.Component {
           })
         }
         const now = new Date()
-        localStorage.token = authResult.idToken
-        localStorage.tokenExpires = now.setSeconds(now.getSeconds() + authResult.expiresIn)
-        localStorage.userId = authResult.idTokenPayload.user_id
+        localStorage.setItem('token', authResult.idToken)
+        localStorage.setItem(
+          'tokenExpires',
+          now.setSeconds(now.getSeconds() + authResult.expiresIn)
+        )
+        localStorage.setItem('userId', authResult.idTokenPayload.user_id)
         this.setState(
           {
             authResult,
@@ -126,7 +129,7 @@ class Auth0 extends React.Component {
   render() {
     return (
       <div>
-        {!this.props.data.User || !localStorage.token ? (
+        {!this.props.data.User || !localStorage.getItem('token') ? (
           <a href="#!" onClick={this.login}>
             {this.props.data.loading ? (
               '...'
@@ -194,7 +197,14 @@ function mapDispatchToProps(dispatch) {
 export default compose(
   graphql(createUser, { options: { refetchQueries: ['checkUser'] } }),
   graphql(checkUser, {
-    options: { variables: { userId: localStorage.userId } },
+    options: {
+      variables: {
+        userId:
+          typeof localStorage !== 'undefined'
+            ? localStorage.getItem('userId')
+            : '',
+      },
+    },
   })
 )(connect(
   null,
