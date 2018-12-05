@@ -10,6 +10,7 @@ import { Collapse } from 'reactstrap'
 import Alert from '../components/Alert'
 import Ad from '../components/Ad'
 import Layout from '../Layout'
+import RateDrug from '../components/RateDrug';
 
 const tabStyle = {
   color: '#ee6e73',
@@ -105,6 +106,9 @@ class Drug extends Component {
                   <p className="text-uppercase text-pinkLight">
                     <strong>{drug.class}</strong>
                   </p>
+                  <div className="mb-3">
+                    <RateDrug drugId={drug.id} />
+                  </div>
                   <div className="mb-3">
                     <h6 className="text-uppercase text-muted">Nomes comuns</h6>
                     {drug.aliases.join(', ')}
