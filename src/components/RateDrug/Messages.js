@@ -22,7 +22,7 @@ const Messages = ({
   } else if (isAuthAlertShown) {
     return (
       <p className="mb-0">
-        Faça login para avaliar{' '}
+        Faça login antes{' '}
         <span role="img" aria-label="upside-down face">
           🙃
         </span>
