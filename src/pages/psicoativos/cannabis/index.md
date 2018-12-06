@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/maconha"
+id: 'cj9mupzh10m1k01553q7kpb2m'
+
+path: '/psicoativos/maconha'
 
 featured: false
 
 name: Maconha
 
-molecules: ["thc"]
+molecules: ['thc']
 
 class: Canabinóide
 
-aliases: 
+aliases:
   - erva
   - banza
   - chá
@@ -22,21 +24,20 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
+    duration: './durations/oral.md'
   - name: Pulmonar
-    duration: "./durations/pulmonar.md"
-    dosage: "./dosages/pulmonar.md" 
-  
+    duration: './durations/pulmonar.md'
+    dosage: './dosages/pulmonar.md'
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/mdma/"
+erowid: 'https://www.erowid.org/chemicals/mdma/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/MDMA"
+psychonautwiki: 'https://psychonautwiki.org/wiki/MDMA'
 ---

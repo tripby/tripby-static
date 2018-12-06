@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/mdma"
+id: 'cj9mupzhw0m3p0155nfeql6n2'
+
+path: '/psicoativos/mdma'
 
 featured: false
 
 name: MDMA
 
-molecules: ["mdma"]
+molecules: ['mdma']
 
 class: Empatogênico
 
-aliases: 
+aliases:
   - ecstasy
   - bala
   - MD
@@ -23,20 +25,20 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Retal
   - name: Nasal
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/mdma/"
+erowid: 'https://www.erowid.org/chemicals/mdma/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/MDMA"
+psychonautwiki: 'https://psychonautwiki.org/wiki/MDMA'
 ---

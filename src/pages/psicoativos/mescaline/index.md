@@ -1,32 +1,34 @@
 ---
-path: "/psicoativos/mescalina"
+id: 'cj9mupzhz0m3x0155o4oc9i7q'
+
+path: '/psicoativos/mescalina'
 
 featured: false
 
 name: Mescalina
 
-molecules: ["mescaline"]
+molecules: ['mescaline']
 
 class: Psicodélico
 
-aliases: 
+aliases:
   - mescalito
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Intravenosa
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/mescaline/"
+erowid: 'https://www.erowid.org/chemicals/mescaline/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Mescaline"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Mescaline'
 ---

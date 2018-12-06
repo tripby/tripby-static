@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/cocaina"
+id: 'cj9mupzh40m1q01554sq6drve'
+
+path: '/psicoativos/cocaina'
 
 featured: true
 
 name: Cocaína
 
-molecules: ["cocaine"]
+molecules: ['cocaine']
 
 class: Estimulante
 
-aliases: 
+aliases:
   - pó
   - pino
   - farinha
@@ -18,21 +20,21 @@ aliases:
 
 routes:
   - name: Nasal
-    duration: "./durations/nasal.md"
-    dosage: "./dosage/nasal.md"
+    duration: './durations/nasal.md'
+    dosage: './dosage/nasal.md'
   - name: Oral
   - name: Pulmonar
   - name: Intravenoso
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/cocaine/"
+erowid: 'https://www.erowid.org/chemicals/cocaine/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Cocaine"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Cocaine'
 ---
