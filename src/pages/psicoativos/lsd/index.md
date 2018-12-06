@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/lsd"
+id: 'cj9mupzht0m3g01552959m7la'
+
+path: '/psicoativos/lsd'
 
 featured: true
 
 name: LSD
 
-molecules: ["lsd"]
+molecules: ['lsd']
 
 class: Psicodélico
 
-aliases: 
+aliases:
   - doce
   - ácido
   - ácido lisérgico
@@ -19,21 +21,21 @@ aliases:
 
 routes:
   - name: Oral/sublingual
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Ocular
   - name: Intravenoso
   - name: Intramuscular
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/lsd/"
+erowid: 'https://www.erowid.org/chemicals/lsd/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/LSD"
+psychonautwiki: 'https://psychonautwiki.org/wiki/LSD'
 ---

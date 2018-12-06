@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/cogumelos-psicodelicos"
+id: 'cj9mupzih0m5d0155d0x2g6ib'
+
+path: '/psicoativos/cogumelos-psicodelicos'
 
 featured: true
 
 name: Cogumelos
 
-molecules: ["psilocybin"]
+molecules: ['psilocybin']
 
 class: Psicodélico
 
-aliases: 
+aliases:
   - cogus
   - cogumelos mágicos
   - chá de cogumelos
@@ -17,19 +19,19 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Intravenosa (psilocibina e psilocina)
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/plants/mushrooms/"
+erowid: 'https://www.erowid.org/plants/mushrooms/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Mushrooms"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Mushrooms'
 ---

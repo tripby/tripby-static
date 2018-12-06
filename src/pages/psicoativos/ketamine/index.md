@@ -1,40 +1,42 @@
 ---
-path: "/psicoativos/ketamine"
+id: 'cj9mupzhr0m3d0155capzpvv9'
+
+path: '/psicoativos/ketamine'
 
 featured: false
 
 name: Ketamina
 
-molecules: ["ketamine"]
+molecules: ['ketamine']
 
 class: Dissociativo
 
-aliases: 
+aliases:
   - keila
   - k
   - special k
 
 routes:
   - name: Nasal
-    duration: "./durations/nasal.md"
-    dosage: "./dosages/nasal.md" 
+    duration: './durations/nasal.md'
+    dosage: './dosages/nasal.md'
   - name: Intramuscular
-    duration: "./durations/intramuscular.md"
-    dosage: "./dosages/intramuscular.md"
+    duration: './durations/intramuscular.md'
+    dosage: './dosages/intramuscular.md'
   - name: Oral
-    dosage: "./dosages/oral.md" 
+    dosage: './dosages/oral.md'
   - name: Intravenoso
-    dosage: "./dosages/intravenous.md"
+    dosage: './dosages/intravenous.md'
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/ketamine/"
+erowid: 'https://www.erowid.org/chemicals/ketamine/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Ketamine"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Ketamine'
 ---

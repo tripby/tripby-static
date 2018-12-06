@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/cafeina"
+id: 'cj9mupzh10m1i0155m076d41b'
+
+path: '/psicoativos/cafeina'
 
 featured: false
 
 name: Cafeína
 
-molecules: ["caffeine"]
+molecules: ['caffeine']
 
 class: Estimulante
 
-aliases: 
+aliases:
   - café
   - pó de guaraná
   - chá preto
@@ -17,18 +19,18 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/caffeine/"
+erowid: 'https://www.erowid.org/chemicals/caffeine/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Caffeine"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Caffeine'
 ---

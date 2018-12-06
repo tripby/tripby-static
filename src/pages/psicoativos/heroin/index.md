@@ -1,39 +1,41 @@
 ---
-path: "/psicoativos/heroina"
+id: 'cj9mupzhn0m3201552rbr4fgh'
+
+path: '/psicoativos/heroina'
 
 featured: false
 
 name: Heroína
 
-molecules: ["heroin"]
+molecules: ['heroin']
 
 class: Analgésico
 
-aliases: 
+aliases:
   - dope
   - H
 
 routes:
   - name: Intravenoso
-    dosage: "./dosages/intravenous.md" 
+    dosage: './dosages/intravenous.md'
   - name: Nasal
-    duration: "./durations/nasal.md"
-    dosage: "./dosages/nasal.md" 
+    duration: './durations/nasal.md'
+    dosage: './dosages/nasal.md'
   - name: Pulmonar
-    dosage: "./dosages/pulmonar.md" 
+    dosage: './dosages/pulmonar.md'
   - name: Oral
-    dosage: "./dosages/oral.md" 
+    dosage: './dosages/oral.md'
   - name: Intramuscular
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/heroin/"
+erowid: 'https://www.erowid.org/chemicals/heroin/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Heroin"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Heroin'
 ---
