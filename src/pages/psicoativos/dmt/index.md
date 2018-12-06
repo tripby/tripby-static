@@ -1,37 +1,39 @@
 ---
-path: "/psicoativos/dmt"
+id: 'cj9mupzh60m1w0155vlqqcp7h'
+
+path: '/psicoativos/dmt'
 
 featured: true
 
 name: DMT
 
-molecules: ["dmt"]
+molecules: ['dmt']
 
 class: Psicodélico
 
-aliases: 
+aliases:
   - dimitri
   - changa
 
 routes:
   - name: Pulmonar (vaporizado)
-    duration: "./durations/pulmonar.md"
-    dosage: "./dosages/pulmonar.md"
+    duration: './durations/pulmonar.md'
+    dosage: './dosages/pulmonar.md'
   - name: Oral (com IMAO)
   - name: Nasal
   - name: Retal
   - name: Intramuscular
   - name: Intravenoso
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/dmt/"
+erowid: 'https://www.erowid.org/chemicals/dmt/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/DMT"
+psychonautwiki: 'https://psychonautwiki.org/wiki/DMT'
 ---

@@ -61,6 +61,7 @@ class Auth0 extends React.Component {
     localStorage.removeItem('tokenExpires')
     localStorage.removeItem('userId')
     this.setState({})
+    this.props.dispatch(setUser({ id: null, role: null }))
   }
   login() {
     localStorage.setItem('pathname', this.props.location.pathname)

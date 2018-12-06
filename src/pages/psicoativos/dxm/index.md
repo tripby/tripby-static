@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/dxm"
+id: 'cj9mupzhb0m2701557pdwyr0y'
+
+path: '/psicoativos/dxm'
 
 featured: false
 
 name: DXM
 
-molecules: ["dxm"]
+molecules: ['dxm']
 
 class: Dissociativo
 
-aliases: 
+aliases:
   - robo
   - robogel
   - dex
@@ -17,20 +19,20 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Nasal
   - name: Intravenoso
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/dxm/"
+erowid: 'https://www.erowid.org/chemicals/dxm/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/DXM"
+psychonautwiki: 'https://psychonautwiki.org/wiki/DXM'
 ---

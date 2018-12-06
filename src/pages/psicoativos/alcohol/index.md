@@ -1,15 +1,17 @@
 ---
-path: "/psicoativos/alcool"
+id: 'cj9mupzgu0m130155m50y3f50'
+
+path: '/psicoativos/alcool'
 
 featured: false
 
 name: Álcool
 
-molecules: ["ethanol"]
+molecules: ['ethanol']
 
 class: Depressor
 
-aliases: 
+aliases:
   - cerveja
   - pinga
   - vinho
@@ -20,20 +22,20 @@ aliases:
 
 routes:
   - name: Oral
-    duration: "./durations/oral.md"
-    dosage: "./dosages/oral.md" 
+    duration: './durations/oral.md'
+    dosage: './dosages/oral.md'
   - name: Retal
   - name: Nasal
 
-summary: "./summary.md"
+summary: './summary.md'
 
-effects: "./effects.md"
+effects: './effects.md'
 
-health: "./health.md"
+health: './health.md'
 
-law: "./law.md"
+law: './law.md'
 
-erowid: "https://www.erowid.org/chemicals/alcohol/"
+erowid: 'https://www.erowid.org/chemicals/alcohol/'
 
-psychonautwiki: "https://psychonautwiki.org/wiki/Alcohol"
+psychonautwiki: 'https://psychonautwiki.org/wiki/Alcohol'
 ---

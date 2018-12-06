@@ -19,7 +19,7 @@ export const apolloClient = new ApolloClient({
     const token = await localStorage.getItem('token')
     operation.setContext({
       headers: {
-        Authorization: `JWT ${token}`,
+        Authorization: `Bearer ${token}`,
       },
     })
   },

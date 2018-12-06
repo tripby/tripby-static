@@ -30,6 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             frontmatter {
+              id
               path
               name
               class
