@@ -90,23 +90,25 @@ class RateDrug extends Component {
               },
             ]}
           >
-            {(createDrugReview, { loading }) => (
-              <div
-                onMouseEnter={
-                  !isAuthenticated ? this.toggleAuthAlert : () => null
-                }
-              >
-                <Stars
-                  onClick={(rating) => {
-                    createDrugReview({ variables: { rating, drugId, userId } })
-                  }}
-                  quiet={!isAuthenticated || loading}
-                  readOnly={!isAuthenticated || loading}
-                  isLoading={data.loading}
-                  initialRating={data && data.counts && data.counts.average}
-                />
-              </div>
-            )}
+            {(createDrugReview, { loading }) => {
+              const checkAuth = () =>
+                !isAuthenticated ? this.toggleAuthAlert : () => null
+              return (
+                <div onMouseEnter={checkAuth()} onTouchStart={checkAuth()}>
+                  <Stars
+                    onClick={(rating) => {
+                      createDrugReview({
+                        variables: { rating, drugId, userId },
+                      })
+                    }}
+                    quiet={!isAuthenticated || loading}
+                    readOnly={!isAuthenticated || loading}
+                    isLoading={data.loading}
+                    initialRating={data && data.counts && data.counts.average}
+                  />
+                </div>
+              )
+            }}
           </Mutation>
           <Messages
             ml={2}
