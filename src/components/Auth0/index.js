@@ -15,23 +15,26 @@ import * as Icon from 'react-feather'
 import setUser from './actions'
 import Identicon from '../Identicon'
 
+export const auth = new auth0.WebAuth({
+  domain: 'tripby.auth0.com',
+  clientID: 'dxItVoNZ8RL7g_SC26qXKLJzlgywHPYp',
+  redirectUri:
+    process.env.NODE_ENV === 'production'
+      ? `https://${process.env.GATSBY_DOMAIN}/authorize`
+      : 'http://localhost:8000/authorize',
+  responseType: 'token id_token',
+  scope: 'openid profile email',
+})
+
+export const login = (pathname) => {
+  localStorage.setItem('pathname', pathname)
+  auth.authorize()
+}
+
 class Auth0 extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   constructor() {
     super()
-    const auth = new auth0.WebAuth({
-      domain: 'tripby.auth0.com',
-      clientID: 'dxItVoNZ8RL7g_SC26qXKLJzlgywHPYp',
-      redirectUri:
-        process.env.NODE_ENV === 'production'
-          ? `https://${process.env.GATSBY_DOMAIN}/authorize`
-          : 'http://localhost:8000/authorize',
-      responseType: 'token id_token',
-      scope: 'openid profile email',
-    })
-    this.auth = auth
-    this.login = this.login.bind(this)
-    this.parseHash = this.parseHash.bind(this)
   }
   componentDidMount() {
     const now = Date.parse(new Date())
@@ -62,10 +65,6 @@ class Auth0 extends React.Component {
     localStorage.removeItem('userId')
     this.setState({})
     this.props.dispatch(setUser({ id: null, role: null }))
-  }
-  login() {
-    localStorage.setItem('pathname', this.props.location.pathname)
-    this.auth.authorize()
   }
   createUser(idToken, email) {
     this.props.mutate({
@@ -99,7 +98,7 @@ class Auth0 extends React.Component {
       })
   }
   parseHash() {
-    this.auth.parseHash(
+    auth.parseHash(
       {
         hash: this.props.location.hash,
       },
@@ -133,7 +132,7 @@ class Auth0 extends React.Component {
     return (
       <div>
         {!this.props.data.User || !localStorage.getItem('token') ? (
-          <a href="#!" onClick={this.login}>
+          <a href="#!" onClick={() => login(this.props.location.pathname)}>
             {this.props.data.loading ? (
               '...'
             ) : (
