@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Box } from 'rebass'
 import styled from 'styled-components'
+import { Location } from '@reach/router'
+
+import { login } from '../Auth0'
 
 const Messages = ({
   initialRating,
@@ -21,12 +24,19 @@ const Messages = ({
     )
   } else if (isAuthAlertShown) {
     return (
-      <p className="mb-0">
-        Faça login antes{' '}
-        <span role="img" aria-label="upside-down face">
-          🙃
-        </span>
-      </p>
+      <Location>
+        {({ location }) => (
+          <p className="mb-0">
+            <a href="#!" onClick={() => login(location.pathname)}>
+              Faça login
+            </a>{' '}
+            antes{' '}
+            <span role="img" aria-label="upside-down face">
+              🙃
+            </span>
+          </p>
+        )}
+      </Location>
     )
   } else if (initialRating && reviewCount) {
     return (
