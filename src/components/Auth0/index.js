@@ -15,23 +15,26 @@ import * as Icon from 'react-feather'
 import setUser from './actions'
 import Identicon from '../Identicon'
 
+export const auth = new auth0.WebAuth({
+  domain: 'tripby.auth0.com',
+  clientID: 'dxItVoNZ8RL7g_SC26qXKLJzlgywHPYp',
+  redirectUri:
+    process.env.NODE_ENV === 'production'
+      ? `https://${process.env.GATSBY_DOMAIN}/authorize`
+      : 'http://localhost:8000/authorize',
+  responseType: 'token id_token',
+  scope: 'openid profile email',
+})
+
+export const login = (pathname) => {
+  localStorage.setItem('pathname', pathname)
+  auth.authorize()
+}
+
 class Auth0 extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   constructor() {
     super()
-    const auth = new auth0.WebAuth({
-      domain: 'tripby.auth0.com',
-      clientID: 'dxItVoNZ8RL7g_SC26qXKLJzlgywHPYp',
-      redirectUri:
-        process.env.NODE_ENV === 'production'
-          ? `https://${process.env.GATSBY_DOMAIN}/authorize`
-          : 'http://localhost:8000/authorize',
-      responseType: 'token id_token',
-      scope: 'openid profile email',
-    })
-    this.auth = auth
-    this.login = this.login.bind(this)
-    this.parseHash = this.parseHash.bind(this)
   }
   componentDidMount() {
     const now = Date.parse(new Date())
@@ -62,10 +65,6 @@ class Auth0 extends React.Component {
     localStorage.removeItem('userId')
     this.setState({})
     this.props.dispatch(setUser({ id: null, role: null }))
-  }
-  login() {
-    localStorage.setItem('pathname', this.props.location.pathname)
-    this.auth.authorize()
   }
   createUser(idToken, email) {
     this.props.mutate({
@@ -99,7 +98,7 @@ class Auth0 extends React.Component {
       })
   }
   parseHash() {
-    this.auth.parseHash(
+    auth.parseHash(
       {
         hash: this.props.location.hash,
       },
@@ -128,10 +127,12 @@ class Auth0 extends React.Component {
     )
   }
   render() {
+    const userId = this.props.data.User && this.props.data.User.id
+    const shortUserId = userId && userId.slice(userId.length - 8, userId.length)
     return (
       <div>
         {!this.props.data.User || !localStorage.getItem('token') ? (
-          <a href="#!" onClick={this.login}>
+          <a href="#!" onClick={() => login(this.props.location.pathname)}>
             {this.props.data.loading ? (
               '...'
             ) : (
@@ -147,9 +148,17 @@ class Auth0 extends React.Component {
           <div>
             <div className="d-inline-flex align-items-center mb-1">
               <span className="mr-2">
-                <Identicon hash={this.props.data.User.id} size={24} />
+                <Identicon hash={userId} size={24} />
               </span>
-              <small>{this.props.data.User.id}</small>
+              <small>
+                <span className="text-muted">id</span>{' '}
+                <strong
+                  title="Este é o ID da sua conta"
+                  style={{ cursor: 'help' }}
+                >
+                  {shortUserId}
+                </strong>
+              </small>
             </div>
             <a
               href="#!"
