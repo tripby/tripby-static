@@ -128,6 +128,8 @@ class Auth0 extends React.Component {
     )
   }
   render() {
+    const userId = this.props.data.User && this.props.data.User.id
+    const shortUserId = userId && userId.slice(userId.length - 8, userId.length)
     return (
       <div>
         {!this.props.data.User || !localStorage.getItem('token') ? (
@@ -147,9 +149,17 @@ class Auth0 extends React.Component {
           <div>
             <div className="d-inline-flex align-items-center mb-1">
               <span className="mr-2">
-                <Identicon hash={this.props.data.User.id} size={24} />
+                <Identicon hash={userId} size={24} />
               </span>
-              <small>{this.props.data.User.id}</small>
+              <small>
+                <span className="text-muted">id</span>{' '}
+                <strong
+                  title="Este é o ID da sua conta"
+                  style={{ cursor: 'help' }}
+                >
+                  {shortUserId}
+                </strong>
+              </small>
             </div>
             <a
               href="#!"
