@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql, Mutation } from 'react-apollo'
 import { connect } from 'react-redux'
 import { Flex } from 'rebass'
+import { Location } from '@reach/router'
+
+import { auth as auth0, login } from '../Auth0'
 
 import { GET_DRUG_REVIEW_COUNT_BY_RATING, CREATE_DRUG_REVIEW } from './queries'
 import Stars from './Stars'
@@ -90,25 +93,27 @@ class RateDrug extends Component {
               },
             ]}
           >
-            {(createDrugReview, { loading }) => {
-              const checkAuth = () =>
-                !isAuthenticated ? this.toggleAuthAlert : () => null
-              return (
-                <div onMouseEnter={checkAuth()} onTouchStart={checkAuth()}>
+            {(createDrugReview, { loading }) => (
+              <Location>
+                {({ location }) => (
                   <Stars
                     onClick={(rating) => {
-                      createDrugReview({
-                        variables: { rating, drugId, userId },
-                      })
+                      if (isAuthenticated) {
+                        createDrugReview({
+                          variables: { rating, drugId, userId },
+                        })
+                      } else {
+                        login(location.pathname)
+                      }
                     }}
-                    quiet={!isAuthenticated || loading}
+                    // quiet={!isAuthenticated || loading}
                     readOnly={!isAuthenticated || loading}
                     isLoading={data.loading}
                     initialRating={data && data.counts && data.counts.average}
                   />
-                </div>
-              )
-            }}
+                )}
+              </Location>
+            )}
           </Mutation>
           <Messages
             ml={2}
