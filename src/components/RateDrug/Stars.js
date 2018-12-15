@@ -15,12 +15,19 @@ const FullStar = styled(Star).attrs({
   fill: ${colors.blue};
 `
 
-const Stars = ({ total, isLoading, ...props }) => (
-  <Rating emptySymbol={<Star />} fullSymbol={<FullStar />} {...props} />
+const Stars = ({
+  total, isLoading, size, ...props
+}) => (
+  <Rating
+    emptySymbol={<Star size={size} />}
+    fullSymbol={<FullStar size={size} />}
+    {...props}
+  />
 )
 
 Stars.propTypes = {
   initialRating: PropTypes.number.isRequired,
+  size: 24,
 }
 
 export default Stars
