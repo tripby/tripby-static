@@ -9,6 +9,14 @@ const Modal = ({ isOpen, children, toggleModal }) => (
   </BootstrapModal>
 )
 
-Modal.propTypes = {}
+Modal.propTypes = {
+  children: PropTypes.node.isRequired,
+  toggleModal: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool,
+}
+
+Modal.defaultProps = {
+  isOpen: false,
+}
 
 export default Modal
