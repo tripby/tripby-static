@@ -39,3 +39,52 @@ export const CREATE_DRUG_REVIEW = gql`
     }
   }
 `
+
+export const UPDATE_DRUG_REVIEW = gql`
+  mutation updateDrugReview(
+    $id: ID!
+    $rating: Int
+    $drugId: ID
+    $userId: ID
+    $message: String
+  ) {
+    updateReview(
+      id: $id
+      rating: $rating
+      drugId: $drugId
+      userId: $userId
+      message: $message
+    ) {
+      id
+    }
+  }
+`
+
+export const GET_USER_RATING_ON_DRUG = gql`
+  query getUserReviewOnDrug(
+    $filter: ReviewFilter
+    $orderBy: ReviewOrderBy
+    $skip: Int
+    $after: String
+    $before: String
+    $first: Int
+    $last: Int
+  ) {
+    allReviews(
+      filter: $filter
+      orderBy: $orderBy
+      skip: $skip
+      after: $after
+      before: $before
+      first: $first
+      last: $last
+    ) {
+      id
+      message
+      rating
+      user {
+        id
+      }
+    }
+  }
+`

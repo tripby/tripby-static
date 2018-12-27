@@ -9,8 +9,9 @@ import { auth as auth0, login } from '../Auth0'
 
 import { GET_DRUG_REVIEW_COUNT_BY_RATING, CREATE_DRUG_REVIEW } from './queries'
 import Stars from './Stars'
-import Modal from './Modal'
+import Modal from '../Modal'
 import Messages from './Messages'
+import ModalContent from './ModalContent'
 
 const getCounts = (scores) => {
   const keys = Object.keys(scores)
@@ -50,22 +51,6 @@ class RateDrug extends Component {
       }
     )
   }
-  onRatingCompleted = (data) => {
-    this.setState(
-      {
-        hasUserRated: true,
-      },
-      () => {
-        setTimeout(
-          () =>
-            this.setState({
-              hasUserRated: false,
-            }),
-          5000
-        )
-      }
-    )
-  }
   onRatingError = (error) => {}
   render() {
     const { data, auth, drugId } = this.props
@@ -78,9 +63,16 @@ class RateDrug extends Component {
     return (
       <div>
         <Flex alignItems="center">
+          <Modal isOpen={isModalOpen} toggleModal={this.toggleModal}>
+            <ModalContent
+              userId={userId}
+              drugId={drugId}
+              toggleModal={this.toggleModal}
+            />
+          </Modal>
           <Mutation
             mutation={CREATE_DRUG_REVIEW}
-            onCompleted={this.onRatingCompleted}
+            onCompleted={this.toggleModal}
             onError={this.onRatingError}
             refetchQueries={() => [
               {
@@ -124,7 +116,6 @@ class RateDrug extends Component {
             hasUserRated={hasUserRated}
           />
         </Flex>
-        <Modal toggleModal={this.toggleModal} isOpen={isModalOpen} />
       </div>
     )
   }
