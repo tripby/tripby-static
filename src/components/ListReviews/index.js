@@ -38,7 +38,14 @@ const ListReviews = ({ data }) => {
       </Fragment>
     )
   } else if (reviews && reviews.length === 0) {
-    return <h5>Ainda não há reviews para esta substância 😿</h5>
+    return (
+      <h6 className="text-center text-muted">
+        Ainda não há reviews para esta substância{' '}
+        <span role="img" aria-label="crying cat">
+          😿
+        </span>
+      </h6>
+    )
   }
   return null
 }
