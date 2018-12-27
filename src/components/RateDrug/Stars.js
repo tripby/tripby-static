@@ -7,7 +7,9 @@ import { Flex, Box } from 'rebass'
 import { Star as StarIcon } from 'react-feather'
 import { colors } from '../../constants'
 
-const Star = (props) => <StarIcon color={colors.grey} size={24} {...props} />
+const Star = (props) => (
+  <StarIcon color={colors.grey} size={props.size} {...props} />
+)
 
 const FullStar = styled(Star).attrs({
   color: colors.blue,
@@ -27,6 +29,10 @@ const Stars = ({
 
 Stars.propTypes = {
   initialRating: PropTypes.number.isRequired,
+  size: PropTypes.number,
+}
+
+Stars.defaultProps = {
   size: 24,
 }
 
