@@ -10,7 +10,8 @@ import { Collapse } from 'reactstrap'
 import Alert from '../components/Alert'
 import Ad from '../components/Ad'
 import Layout from '../Layout'
-import RateDrug from '../components/RateDrug';
+import RateDrug from '../components/RateDrug'
+import ListReviews from '../components/ListReviews'
 
 const tabStyle = {
   color: '#ee6e73',
@@ -24,6 +25,7 @@ const defaultTabs = [
   { id: 'overview', label: 'Sumário' },
   { id: 'effects', label: 'Efeitos' },
   { id: 'health', label: 'Saúde' },
+  { id: 'reviews', label: 'Reviews' },
   { id: 'law', label: 'Lei' },
 ]
 
@@ -132,8 +134,7 @@ class Drug extends Component {
                         <div className="d-flex align-items-center text-muted">
                           <div className="mr-2 d-flex">
                             {route.dosage && <small>dosagem</small>}
-                            {route.dosage &&
-                              route.duration && (
+                            {route.dosage && route.duration && (
                               <small className="mx-1">/</small>
                             )}
                             {route.duration && <small>duração</small>}
@@ -398,6 +399,9 @@ class Drug extends Component {
                               drug.health.childMarkdownRemark.internal.content
                             }
                           />
+                        </TabPanel>
+                        <TabPanel>
+                          <ListReviews drugId={drug.id} />
                         </TabPanel>
                         <TabPanel>
                           <Markdown
