@@ -1,5 +1,4 @@
 import React from 'react'
-import { Provider } from 'react-redux'
 import * as Sentry from '@sentry/browser'
 
 import ApolloClient from 'apollo-boost'

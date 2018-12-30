@@ -5,13 +5,10 @@
  */
 
 import React from 'react'
-import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import classnames from 'classnames'
 import * as Icon from 'react-feather'
-import { Location } from '@reach/router'
 
-import Auth0 from './Auth0'
 import Hamburger from './Hamburger'
 import SocialMedia from './SocialMedia'
 import { AuthConsumer } from './Auth'
