@@ -7,7 +7,6 @@ import { ApolloProvider } from 'react-apollo'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import fetch from 'node-fetch'
 
-import createStore from './src/store/createStore'
 import { apiUrl } from './src/constants'
 import SentryBoundary from './src/components/SentryBoundary'
 import AuthProvider from './src/components/Auth'
@@ -32,15 +31,11 @@ export const apolloClient = new ApolloClient({
   },
 })
 
-const store = createStore()
-
 // eslint-disable-next-line react/display-name,react/prop-types
 export default ({ element }) => (
   <SentryBoundary>
     <AuthProvider>
-      <Provider store={store}>
-        <ApolloProvider client={apolloClient}>{element}</ApolloProvider>
-      </Provider>
+      <ApolloProvider client={apolloClient}>{element}</ApolloProvider>
     </AuthProvider>
   </SentryBoundary>
 )
