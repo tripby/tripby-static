@@ -2,16 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Box } from 'rebass'
 import styled from 'styled-components'
-import { Location } from '@reach/router'
-
-import { login } from '../Auth0'
 
 const Messages = ({
-  initialRating,
-  reviewCount,
-  isAuthAlertShown,
-  isLoading,
-  hasUserRated,
+  initialRating, reviewCount, isLoading, hasUserRated,
 }) => {
   if (hasUserRated) {
     return (
@@ -21,22 +14,6 @@ const Messages = ({
           🎈
         </span>
       </p>
-    )
-  } else if (isAuthAlertShown) {
-    return (
-      <Location>
-        {({ location }) => (
-          <p className="mb-0">
-            <a href="#!" onClick={() => login(location.pathname)}>
-              Faça login
-            </a>{' '}
-            antes{' '}
-            <span role="img" aria-label="upside-down face">
-              🙃
-            </span>
-          </p>
-        )}
-      </Location>
     )
   } else if (initialRating && reviewCount) {
     return (
@@ -83,7 +60,8 @@ const WrappedMessages = ({
 Messages.propTypes = {
   initialRating: PropTypes.number,
   reviewCount: PropTypes.number,
-  isAuthAlertShown: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  hasUserRated: PropTypes.bool,
 }
 
 export default WrappedMessages
