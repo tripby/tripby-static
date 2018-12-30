@@ -1,3 +1,8 @@
+export const domain =
+  process.env.NODE_ENV === 'production'
+    ? `https://${GATSBY_DOMAIN}`
+    : 'http://localhost:8000'
+
 export const apiUrl = 'https://api.graph.cool/simple/v1/tripby'
 
 export const sentryDsn =
