@@ -1,5 +1,8 @@
 export const apiUrl = 'https://api.graph.cool/simple/v1/tripby'
 
+export const sentryDsn =
+  'https://d840f5a862d149f095855000c80d02d9@sentry.io/1361663'
+
 export const colors = {
   blue: '#00adee',
   blueLight: '#4cf',
