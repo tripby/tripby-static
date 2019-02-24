@@ -5,14 +5,15 @@
  */
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import classnames from 'classnames'
 import * as Icon from 'react-feather'
 
+import Auth0 from './Auth0'
 import Hamburger from './Hamburger'
 import SocialMedia from './SocialMedia'
-import { AuthConsumer } from './Auth'
-import User from './Auth/User'
+import { Location } from '@reach/router'
 
 const logo = require('../assets/images/logo.svg')
 
@@ -103,25 +104,11 @@ class Navigation extends React.Component {
                     )
                   })}
                   <li>
-                    <AuthConsumer>
-                      {({ user, logout, login }) => {
-                        if (user) {
-                          return <User logout={logout} userId={user.id} />
-                        }
-                        return (
-                          <a
-                            href="#!"
-                            className="d-flex align-items-center"
-                            onClick={login}
-                          >
-                            <span className="d-inline-flex mr-2">
-                              <Icon.LogIn size={24} />
-                            </span>
-                            <span>Login</span>
-                          </a>
-                        )
-                      }}
-                    </AuthConsumer>
+                    <Location>
+                      {({ location, navigate }) => (
+                        <Auth0 location={location} navigate={navigate} />
+                      )}
+                    </Location>
                   </li>
                 </ul>
               </nav>

@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Mutation } from 'react-apollo'
+import { connect } from 'react-redux'
 import { Flex } from 'rebass'
+import { Location } from '@reach/router'
+
+import { auth as auth0, login } from '../Auth0'
 
 import { GET_DRUG_REVIEW_COUNT_BY_RATING, CREATE_DRUG_REVIEW } from './queries'
 import Stars from './Stars'
 import Modal from '../Modal'
 import Messages from './Messages'
 import ModalContent from './ModalContent'
-import { AuthConsumer } from '../Auth'
 
 const getCounts = (scores) => {
   const keys = Object.keys(scores)
@@ -50,68 +53,70 @@ class RateDrug extends Component {
   }
   onRatingError = (error) => {}
   render() {
-    const { data, drugId } = this.props
+    const { data, auth, drugId } = this.props
+    const userId = auth.id
     const { isAuthAlertShown, isModalOpen, hasUserRated } = this.state
+    const isAuthenticated = !!auth.id
     const initialRating = data && data.counts && data.counts.average
     const reviewCount = data && data.counts && data.counts.total
     const isLoading = data.loading
     return (
-      <AuthConsumer>
-        {({ login, user }) => (
-          <div>
-            <Flex alignItems="center">
-              <Modal isOpen={isModalOpen} toggleModal={this.toggleModal}>
-                <ModalContent
-                  userId={user && user.id}
-                  drugId={drugId}
-                  toggleModal={this.toggleModal}
-                />
-              </Modal>
-              <Mutation
-                mutation={CREATE_DRUG_REVIEW}
-                onCompleted={this.toggleModal}
-                onError={this.onRatingError}
-                refetchQueries={() => [
-                  {
-                    query: GET_DRUG_REVIEW_COUNT_BY_RATING,
-                    variables: {
-                      drugFilter: {
-                        id: drugId,
-                      },
-                    },
+      <div>
+        <Flex alignItems="center">
+          <Modal isOpen={isModalOpen} toggleModal={this.toggleModal}>
+            <ModalContent
+              userId={userId}
+              drugId={drugId}
+              toggleModal={this.toggleModal}
+            />
+          </Modal>
+          <Mutation
+            mutation={CREATE_DRUG_REVIEW}
+            onCompleted={this.toggleModal}
+            onError={this.onRatingError}
+            refetchQueries={() => [
+              {
+                query: GET_DRUG_REVIEW_COUNT_BY_RATING,
+                variables: {
+                  drugFilter: {
+                    id: drugId,
                   },
-                ]}
-              >
-                {(createDrugReview, { loading }) => (
+                },
+              },
+            ]}
+          >
+            {(createDrugReview, { loading }) => (
+              <Location>
+                {({ location }) => (
                   <Stars
                     onClick={(rating) => {
-                      if (user) {
+                      if (isAuthenticated) {
                         createDrugReview({
-                          variables: { rating, drugId, userId: user.id },
+                          variables: { rating, drugId, userId },
                         })
                       } else {
-                        login()
+                        login(location.pathname)
                       }
                     }}
                     // quiet={!isAuthenticated || loading}
-                    readOnly={!user || loading}
+                    readOnly={!isAuthenticated || loading}
                     isLoading={data.loading}
                     initialRating={data && data.counts && data.counts.average}
                   />
                 )}
-              </Mutation>
-              <Messages
-                ml={2}
-                isLoading={isLoading}
-                initialRating={initialRating}
-                reviewCount={reviewCount}
-                isAuthAlertShown={isAuthAlertShown}
-                hasUserRated={hasUserRated}
-              />
-            </Flex>
-          </div>
-        )}
-      </AuthConsumer>
+              </Location>
+            )}
+          </Mutation>
+          <Messages
+            ml={2}
+            isLoading={isLoading}
+            initialRating={initialRating}
+            reviewCount={reviewCount}
+            isAuthAlertShown={isAuthAlertShown}
+            hasUserRated={hasUserRated}
+          />
+        </Flex>
+      </div>
     )
   }
 }
@@ -119,6 +124,10 @@ class RateDrug extends Component {
 RateDrug.propTypes = {
   data: PropTypes.object.isRequired,
 }
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+})
 
 export default graphql(GET_DRUG_REVIEW_COUNT_BY_RATING, {
   options: ({ drugId }) => ({
@@ -144,4 +153,7 @@ export default graphql(GET_DRUG_REVIEW_COUNT_BY_RATING, {
           : null,
     },
   }),
-})(RateDrug)
+})(connect(
+  mapStateToProps,
+  null
+)(RateDrug))
