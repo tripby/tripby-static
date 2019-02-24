@@ -11,13 +11,15 @@ export default class SentryBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    this.setState({ error })
-    Sentry.withScope((scope) => {
-      Object.keys(errorInfo).forEach((key) => {
-        scope.setExtra(key, errorInfo[key])
+    if (process.env.NODE_ENV === 'production') {
+      this.setState({ error })
+      Sentry.withScope((scope) => {
+        Object.keys(errorInfo).forEach((key) => {
+          scope.setExtra(key, errorInfo[key])
+        })
+        Sentry.captureException(error)
       })
-      Sentry.captureException(error)
-    })
+    }
   }
 
   render() {
