@@ -48,7 +48,7 @@ const Messages = ({
   } else if (!isLoading) {
     return (
       <p className="mb-0">
-        Seja x primeirx a avaliar{' '}
+        Faça o primeiro review{' '}
         <span role="img" aria-label="sparkles">
           ✨
         </span>
