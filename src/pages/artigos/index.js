@@ -29,9 +29,9 @@ const Articles = () => (
         const articles = data.allMarkdownRemark.edges
         return (
           <div>
-            <section className="py-3 py-md-4 bg-blueLighter">
+            <section className="py-3 py-md-4 bg-green">
               <div className="container">
-                <h4 className="text-uppercase text-muted">
+                <h4 className="text-uppercase text-blue">
                   <strong>Redução de danos</strong>
                 </h4>
               </div>

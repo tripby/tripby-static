@@ -14,7 +14,7 @@ import RateDrug from '../components/RateDrug'
 import ListReviews from '../components/ListReviews'
 
 const tabStyle = {
-  color: '#ee6e73',
+  color: '#00a38b',
   borderColor: '#ee6e73',
   borderWidth: 2,
   fontWeight: 500,
@@ -92,7 +92,7 @@ class Drug extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="d-flex align-items-center">
                     <div className="flex-1">
-                      <h1>
+                      <h1 className="text-blue">
                         <strong>{drug.name}</strong>
                       </h1>
                     </div>
@@ -105,7 +105,7 @@ class Drug extends Component {
                       />
                     ))}
                   </div>
-                  <p className="text-uppercase text-pinkLight">
+                  <p className="text-uppercase text-pink">
                     <strong>{drug.class}</strong>
                   </p>
                   <div className="mb-3">

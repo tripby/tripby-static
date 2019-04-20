@@ -1,26 +1,21 @@
 /**
-*
-* FeaturedContent
-*
-*/
+ *
+ * FeaturedContent
+ *
+ */
 
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
 function FeaturedContent(props) {
-  const sectionStyle = {
-    background: '#eeeeee',
-  }
-  const textStyle = {
-    color: '#7e7e7e',
-  }
   return (
-    <section style={sectionStyle}>
+    <section className="bg-blue text-green">
       <div className="container">
         <div className="py-4 py-md-5 d-flex flex-column justify-content-center">
-          <h1 className={`text-uppercase ${!props.subtagline ? ' mb-0' : ''}`}><strong style={textStyle}>{props.tagline}</strong></h1>
-          <p style={textStyle}>{props.subtagline}</p>
+          <h1 className={`text-uppercase ${!props.subtagline ? ' mb-0' : ''}`}>
+            <strong>{props.tagline}</strong>
+          </h1>
+          <p>{props.subtagline}</p>
           {props.children}
         </div>
       </div>

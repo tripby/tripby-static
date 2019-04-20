@@ -4,9 +4,9 @@ import Layout from '../Layout'
 const About = () => (
   <Layout>
     <div>
-      <section className="py-3 py-md-4 bg-blueLighter">
+      <section className="py-3 py-md-4 bg-green">
         <div className="container container--tight">
-          <h1 className="text-uppercase">
+          <h1 className="text-uppercase text-blue">
             <strong>Sobre o Tripby</strong>
           </h1>
         </div>
