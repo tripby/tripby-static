@@ -31,9 +31,9 @@ const Drugs = () => (
         const drugs = data.allMarkdownRemark.edges
         return (
           <div>
-            <section className="py-3 py-md-4 bg-green">
+            <section className="py-3 py-md-4 bg-screaminGreen">
               <div className="container">
-                <h4 className="text-uppercase text-blue">
+                <h4 className="text-uppercase text-purpleHeart">
                   <strong>Psicoativos</strong>
                 </h4>
               </div>

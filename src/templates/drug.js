@@ -92,7 +92,7 @@ class Drug extends Component {
                 <div className="col-12 col-lg-4">
                   <div className="d-flex align-items-center">
                     <div className="flex-1">
-                      <h1 className="text-blue">
+                      <h1 className="text-purpleHeart">
                         <strong>{drug.name}</strong>
                       </h1>
                     </div>
@@ -105,7 +105,7 @@ class Drug extends Component {
                       />
                     ))}
                   </div>
-                  <p className="text-uppercase text-pink">
+                  <p className="text-uppercase text-persianGreen">
                     <strong>{drug.class}</strong>
                   </p>
                   <div className="mb-3">

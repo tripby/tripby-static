@@ -6,9 +6,9 @@ const Article = (props) => {
   return (
     <Layout>
       <div>
-        <section className="py-3 py-md-4 bg-blue">
+        <section className="py-3 py-md-4 bg-purpleHeart">
           <div className="container container--tight">
-            <h1 className="text-green">
+            <h1 className="text-screaminGreen">
               <strong>{article.frontmatter.title}</strong>
             </h1>
           </div>

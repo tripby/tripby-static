@@ -1,10 +1,10 @@
 /* base */
 html {
-	max-width:100%;
-	overflow-x:hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
-	background-color: #fff;
+  background-color: #fff;
   font-size: 14px;
 }
 @include media-breakpoint-down(md) {
@@ -15,12 +15,12 @@ body {
 }
 
 ::selection {
-	background: map-get($colors, blueAccent); /* WebKit/Blink Browsers */
-	color: #fff;
+  background: map-get($colors, heliotrope); /* WebKit/Blink Browsers */
+  color: #fff;
 }
 ::moz-selection {
-  background: map-get($colors, blueAccent); /* WebKit/Blink Browsers */
-	color: #fff;
+  background: map-get($colors, heliotrope); /* WebKit/Blink Browsers */
+  color: #fff;
 }
 
 .flex-1 {
