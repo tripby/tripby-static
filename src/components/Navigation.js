@@ -108,7 +108,7 @@ class Navigation extends React.Component {
                         <span className="mr-2 d-inline-flex align-items-center">
                           <Icon.MessageSquare size={24} />
                         </span>
-                        <span>Fórum Preparty ↗</span>
+                        <span>Fórum PreParty ↗</span>
                       </div>
                     </a>
                   </li>
