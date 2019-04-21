@@ -1,6 +1,6 @@
 {
-    "name": "TRIPBY.org",
-    "short_name": "TRIPBY.org",
+    "name": "Tripby",
+    "short_name": "Tripby",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#4fff88",
+    "background_color": "#4fff88",
     "display": "standalone"
 }
