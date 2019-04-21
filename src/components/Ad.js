@@ -6,10 +6,14 @@ import * as Icon from 'react-feather'
 import Link from 'gatsby-link'
 
 const Card = styled.div`
-  background: linear-gradient(135deg, rgba(29,192,220,1) 0%,rgba(0,0,0,1) 64%);
+  background: linear-gradient(
+    135deg,
+    rgba(29, 192, 220, 1) 0%,
+    rgba(0, 0, 0, 1) 64%
+  );
   background: linear-gradient(135deg, #2c5364, #0f2027 64%);
   border-radius: 8px;
-  `
+`
 
 const Background = styled.div`
   position: absolute;
@@ -31,7 +35,10 @@ export default class Ad extends Component {
   }
   render() {
     const { className, children, sizes } = this.props
-    if (typeof window !== 'undefined' && !localStorage.getItem(`hideAd${currentAdId}`)) {
+    if (
+      typeof window !== 'undefined' &&
+      !localStorage.getItem(`hideAd${currentAdId}`)
+    ) {
       return (
         <Card className={`card ${className}`}>
           <Background>
@@ -50,9 +57,7 @@ export default class Ad extends Component {
           </Background>
           <div className="card-body">
             <div className="d-flex">
-              <div className="flex-1">
-                {children}
-              </div>
+              <div className="flex-1">{children}</div>
               <Icon.X
                 className="text-white position-relative cursor-pointer"
                 style={{ zIndex: 2 }}
@@ -68,16 +73,13 @@ export default class Ad extends Component {
             >
               <a
                 href="https://tripby.bigcartel.com"
-                className="btn btn-outline border-green text-white d-inline-flex align-items-center justify-content-center mb-1"
+                className="btn btn-outline border-screaminGreen text-white d-inline-flex align-items-center justify-content-center mb-1"
                 target="_blank"
               >
                 Shop
                 <Icon.ExternalLink size={16} className="ml-2" />
               </a>
-              <Link
-                to="/shop"
-                className="btn text-white d-inline-block"
-              >
+              <Link to="/shop" className="btn text-white d-inline-block">
                 Envie a sua
               </Link>
             </div>

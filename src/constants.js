@@ -4,15 +4,14 @@ export const sentryDsn =
   'https://d840f5a862d149f095855000c80d02d9@sentry.io/1361663'
 
 export const colors = {
-  blue: '#00adee',
-  blueLight: '#4cf',
-  blueLighter: '#E0F7FA',
-  blueAccent: '#1DC0DC',
-  pink: '#ec297b',
-  pinkLight: '#f06292',
-  pinkLighter: '#F2ACC4',
-  green: '#4FFF88',
-  grey: ' #9E9E9E',
+  purpleHeart: '#6e31cc',
+  heliotrope: '#9a57ff',
+  blueLighter: '#d59648',
+  blueAccent: '#0dffca',
+  persianGreen: '#00a38b',
+  screaminGreen: '#00ff36',
+  pinkLighter: '#f2acc4',
+  grey: '#9e9e9e',
   greyLight: '#eee',
   greyLighter: '#fafafa',
   greyDark: '#424242',
