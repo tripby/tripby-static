@@ -99,6 +99,20 @@ class Navigation extends React.Component {
                     )
                   })}
                   <li>
+                    <a
+                      href="https://preparty.com.br"
+                      target="_blank"
+                      onClick={() => this.setState({ navOpened: false })}
+                    >
+                      <div className="d-flex align-items-center">
+                        <span className="mr-2 d-inline-flex align-items-center">
+                          <Icon.MessageSquare size={24} />
+                        </span>
+                        <span>Fórum Preparty ↗</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
                     <Location>
                       {({ location, navigate }) => (
                         <Auth0 location={location} navigate={navigate} />
