@@ -1,22 +1,23 @@
-.btn, .btn-lg {
+.btn,
+.btn-lg {
   border-radius: 50px;
 }
 .btn-primary {
-  background-color: map-get($map: $colors, $key: blueLight);
-  border-color: map-get($map: $colors, $key: blueLight);
+  background-color: map-get($map: $colors, $key: heliotrope);
+  border-color: map-get($map: $colors, $key: heliotrope);
   color: rgba(255, 255, 255, 1);
   &:hover {
-    background-color: map-get($map: $colors, $key: blue);
-    border-color: map-get($map: $colors, $key: blue);
+    background-color: map-get($map: $colors, $key: purpleHeart);
+    border-color: map-get($map: $colors, $key: purpleHeart);
     color: rgba(255, 255, 255, 1) !important;
   }
 }
 .btn-outline-primary {
-  border-color: map-get($map: $colors, $key: blue);
-  color: map-get($map: $colors, $key: blue);
+  border-color: map-get($map: $colors, $key: purpleHeart);
+  color: map-get($map: $colors, $key: purpleHeart);
   &:hover {
-    background-color: map-get($map: $colors, $key: blueLight);
-    border-color: map-get($map: $colors, $key: blueLight);
+    background-color: map-get($map: $colors, $key: heliotrope);
+    border-color: map-get($map: $colors, $key: heliotrope);
     color: rgba(255, 255, 255, 1) !important;
   }
 }

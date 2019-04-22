@@ -1,21 +1,24 @@
-@import "~hamburgers/dist/hamburgers";
+@import '~hamburgers/dist/hamburgers';
 .hamburger {
   z-index: 20;
 }
 .hamburger:focus {
   outline: 0;
 }
-.hamburger, .hamburger-box {
+.hamburger,
+.hamburger-box {
   width: 24px;
   height: 24px;
   padding: 0;
 }
 .hamburger-box {
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background: map-get($colors, blue);
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background: map-get($colors, purpleHeart);
   width: 20px;
-  height: .2em;
+  height: 0.2em;
 }
 .hamburger-inner {
   margin-top: 0;

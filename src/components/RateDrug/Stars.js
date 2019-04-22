@@ -12,9 +12,9 @@ const Star = (props) => (
 )
 
 const FullStar = styled(Star).attrs({
-  color: colors.blue,
+  color: colors.purpleHeart,
 })`
-  fill: ${colors.blue};
+  fill: ${colors.purpleHeart};
 `
 
 const Stars = ({
